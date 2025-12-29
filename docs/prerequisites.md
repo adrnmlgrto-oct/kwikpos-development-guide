@@ -198,33 +198,33 @@ Before proceeding to project setup, verify you have:
 
 **For Backend Development (KwikPOS Live/API):**
 
-- [ ] Git installed and configured with your credentials
-- [ ] Appropriate JDK version installed for your project
-- [ ] Maven installed and accessible from command line
-- [ ] MySQL & MS SQL Server installed (for KwikPOS Live development)
-- [ ] IDE installed with Spring Boot support
-- [ ] Basic understanding of Spring Boot and REST APIs
-- [ ] Ability to clone repositories and create branches
+- Git installed and configured with your credentials
+- Appropriate JDK version installed for your project
+- Maven installed and accessible from command line
+- MySQL & MS SQL Server installed (for KwikPOS Live development)
+- IDE installed with Spring Boot support
+- Basic understanding of Spring Boot and REST APIs
+- Ability to clone repositories and create branches
 
 **For Frontend Development (Angular):**
 
-- [ ] Git installed and configured with your credentials
-- [ ] Node.js and npm installed
-- [ ] Angular CLI installed globally
-- [ ] TypeScript installed and configured
-- [ ] IDE (VS Code recommended) with Angular extensions
-- [ ] Basic understanding of Angular and TypeScript
-- [ ] Familiarity with RxJS and HTTP client
+- Git installed and configured with your credentials
+- Node.js and npm installed
+- Angular CLI installed globally
+- TypeScript installed and configured
+- IDE (VS Code recommended) with Angular extensions
+- Basic understanding of Angular and TypeScript
+- Familiarity with RxJS and HTTP client
 
 **For Flutter Development:**
 
-- [ ] Git installed and configured with your credentials
-- [ ] Flutter SDK installed and in PATH
-- [ ] `flutter doctor` shows no critical issues
-- [ ] IDE (Android Studio or VS Code) with Flutter/Dart plugins installed
-- [ ] Android SDK installed (for Android development)
-- [ ] Ability to run Flutter apps on emulator or device
-- [ ] Basic understanding of Flutter widgets and state management
+- Git installed and configured with your credentials
+- Flutter SDK installed and in PATH
+- `flutter doctor` shows no critical issues
+- IDE (Android Studio or VS Code) with Flutter/Dart plugins installed
+- Android SDK installed (for Android development)
+- Ability to run Flutter apps on emulator or device
+- Basic understanding of Flutter widgets and state management
 
 ## Next Steps
 
