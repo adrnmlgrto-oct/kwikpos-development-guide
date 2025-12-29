@@ -2,79 +2,43 @@
 
 Welcome to the KwikPOS development team! This guide introduces you to our ecosystem of projects and helps you understand what we build and maintain.
 
+## Before You Begin
+
+Before diving into development, make sure you have the necessary knowledge and tools:
+
+- **Review [Prerequisites](prerequisites.md)** - Essential knowledge (Git, Java, Spring Boot, etc.) and required development tools
+- Verify you have the appropriate JDK version for your project
+- Ensure your development environment is set up correctly
+
 ## Project Ecosystem
 
 Our ecosystem consists of cloud-based backend services and on-premise API adapters that work together to provide a complete POS solution. Real-time data syncing enables individual POS applications to communicate with our cloud backend server, consolidating sales records from different client stores and branches.
 
 ## Our Projects
 
-### KwikPOS Live (Backend)
+We maintain these main projects:
 
-**Purpose:** Cloud web application backend serving multiple tenant stores and branches
+### 1. KwikPOS Live (Backend)
+**Cloud-based multi-tenant backend system**
 
-#### **Tech Stack:**
-- **Framework:** Spring Boot 2.7.2
-- **Runtime:** Java 8 (planned upgrade to newer version)
-- **Database:** MySQL 8.0
-- **Deployment:** Apache Tomcat 9.0 on AWS EC2
-- **Deployment Method:** Manual WAR file updates
+- Central data hub for multiple stores and branches
+- Sales analytics and reporting platform
+- Built with Spring Boot 2.7.2 (Java 8) and MySQL 8.0
+- Deployed on AWS EC2
 
-#### **Key Features:**
-- Multi-tenant architecture supporting multiple clients with their branches and terminals
-- Centralized data aggregation from individual POS terminals
-- Sales data consolidation with flexible filtering (company-wide, branch-specific, store-specific)
-- Sales performance analytics and reporting
-- RESTful API endpoints for POS terminal communication
-- Secure data retrieval and display for web dashboard
+[View detailed documentation →](projects/kwikpos-live.md)
 
-#### **Responsibilities:**
-- Accepts data from POS terminals across all client stores via REST API
-- Serves as the central data repository for sales records
-- Provides backend services for the KwikPOS Live web application
-- Handles data retrieval requests for sales analytics and reporting
+### 2. KwikPOS API (Kiosk-to-POS Adapter)
+**On-premise bridge for legacy POS integration**
 
-#### **Deployment Architecture:**
-- Hosted on AWS EC2 instance
-- Apache Tomcat 9.0 servlet container
-- Direct MySQL 8.0 database connection
-- Legacy deployment pipeline (manual WAR deployment)
+- Connects modern kiosks to legacy POS systems
+- Data transformation layer for Chase POS compatibility
+- Built with Spring Boot 3.5.4 (Java 17)
+- Deployed on local POS machines
 
----
+[View detailed documentation →](projects/kwikpos-api.md)
 
-### KwikPOS API (Ordering Kiosk to Legacy POS Data Adapter)
-
-**Purpose:** Bridge layer connecting self-ordering kiosks to legacy POS applications
-
-#### **Tech Stack:**
-- **Framework:** Spring Boot 3.5.4
-- **Runtime:** Java 17
-- **Deployment:** Apache Tomcat 10.0
-- **Deployment Location:** On-premise POS machine
-
-#### **Key Features:**
-- API server for self-ordering kiosk integration
-- Data transformation layer between modern kiosks and legacy POS systems
-- Real-time order transmission from kiosks to POS terminals
-- Compatibility layer for Chase POS integration
-
-#### **Responsibilities:**
-- Receives order requests from self-ordering kiosks
-- Transforms and adapts order data to legacy POS format
-- Transmits orders to the connected POS terminal
-- Serves as the communication bridge between modern ordering interfaces and legacy systems
-
-#### **Deployment Architecture:**
-- Installed on individual POS machines acting as local servers
-- Apache Tomcat 10.0 servlet container
-- Handles local network requests from nearby kiosks
-- Direct integration with Chase POS application
-
-#### **Main Highlight:**
-This adapter enables our modern self-ordering kiosk products to seamlessly communicate with legacy POS applications, particularly Chase POS, without requiring modifications to the existing POS software.
-
----
-
-## Technology Overview
+## Technology Stack Overview
 
 ### Backend Technologies
 - **Java 8** - KwikPOS Live (with upgrade plans)
@@ -93,44 +57,6 @@ This adapter enables our modern self-ordering kiosk products to seamlessly commu
 - **AWS EC2** - Cloud hosting for KwikPOS Live
 - **On-Premise** - Local POS machine hosting for KwikPOS API
 
-## Development Environment Setup
-
-### Prerequisites
-
-Ensure you have the following installed based on the project you're working on:
-
-#### For KwikPOS Live
-- **JDK 8**
-  ```bash
-  java -version  # Should show Java 8
-  ```
-- **Maven 3.6+**
-  ```bash
-  mvn -version
-  ```
-- **MySQL 8.0**
-  ```bash
-  mysql --version
-  ```
-- **Apache Tomcat 9.0** (for local testing)
-
-#### For KwikPOS API
-- **JDK 17**
-  ```bash
-  java -version  # Should show Java 17
-  ```
-- **Maven 3.8+**
-  ```bash
-  mvn -version
-  ```
-- **Apache Tomcat 10.0** (for local testing)
-
-#### General Development Tools
-- **Git** (v2.30+)
-- **IDE:** IntelliJ IDEA or Eclipse with Spring Boot support
-- **Postman** or similar API testing tool
-- **MySQL Workbench** or DBeaver for database management
-
 ## Architecture Comparison
 
 | Aspect | KwikPOS Live | KwikPOS API |
@@ -138,33 +64,115 @@ Ensure you have the following installed based on the project you're working on:
 | **Deployment** | Cloud (AWS EC2) | On-Premise (POS Machine) |
 | **Scope** | Multi-tenant | Single store |
 | **Purpose** | Central data hub | Kiosk-POS bridge |
-| **Database** | MySQL 8.0 | N/A (passes through) |
+| **Database** | MySQL 8.0 | MS SQL Server |
 | **Clients** | Multiple tenants | Individual kiosks |
 | **Integration** | POS Terminals → Cloud | Kiosks → Legacy POS |
+| **Java Version** | Java 8 | Java 17 |
+| **Spring Boot** | 2.7.2 | 3.5.4 |
 
-## Project Selection Guide
+## Your Work Scope
 
-**Work on KwikPOS Live if:**
-- You're developing cloud-based features
-- Working on multi-tenant functionality
-- Building sales analytics or reporting features
-- Implementing web dashboard features
-- Upgrading Java/Spring Boot versions
+As a developer on the KwikPOS team, you'll work on **both projects** depending on the features and requirements. Your work will primarily involve:
 
-**Work on KwikPOS API if:**
-- You're integrating with legacy POS systems
-- Developing kiosk communication features
-- Working on data transformation layers
-- Implementing Chase POS compatibility
-- Testing on-premise deployment scenarios
+### Backend Development
+- Building and maintaining RESTful APIs for both KwikPOS Live and KwikPOS API
+- Implementing business logic and service layers
+- Developing new features and enhancements
+- Bug fixes and performance optimization
 
-## Next Steps
+### Frontend Development
+- Working on the **Angular-based frontend** for KwikPOS Live
+- Building responsive UI components and pages
+- Integrating with backend REST APIs
+- Implementing forms, validations, and user interactions
+- Managing application state and data flow
 
-1. Choose which project you'll be working on
-2. Set up the appropriate development environment
-3. Clone the respective repository
-4. Review the project-specific documentation
-5. Contact your team lead for repository access and credentials
+### Database Work
+A significant portion of your work will involve **writing SQL queries** across multiple database systems:
+
+- **MySQL** - For KwikPOS Live (primary backend database)
+- **Microsoft SQL Server** - For KwikPOS API and legacy system integration
+- **SQLite** - For KwikPOS application local storage
+- **PostgreSQL** - For Supabase integration
+
+You'll be creating, optimizing, and maintaining SQL queries including:
+
+- Complex `SELECT` queries with joins and aggregations
+- `INSERT`, `UPDATE`, `DELETE` operations
+- Stored procedures, views, and functions
+- Database migrations and schema changes
+- Query optimization and indexing
+
+### Full-Stack Responsibilities
+- Both cloud-based (KwikPOS Live) and on-premise (KwikPOS API) development
+- Multi-tenant architecture implementation
+- Legacy system integration and data transformation
+- Testing and deployment across different environments
+
+## Quick Start Steps
+
+1. **Check Prerequisites**
+
+    - Review the [Prerequisites](prerequisites.md) page
+    - Install required tools for both Java 8 and Java 17 development
+    - Set up database clients for MySQL, SQL Server, SQLite, and PostgreSQL
+    - Verify your development environment
+
+2. **Get Access & Onboarding**
+
+    - Contact your team lead for repository access to both projects
+    - Request credentials for:
+        - AWS access (for KwikPOS Live deployment)
+        - Database connections (MySQL, SQL Server, PostgreSQL)
+        - On-premise system access (if needed for KwikPOS API testing)
+
+3. **Set Up Both Projects**
+
+    - Clone both repositories:
+        - KwikPOS Live (Java 8, Spring Boot 2.7.2)
+        - KwikPOS API (Java 17, Spring Boot 3.5.4)
+    - Follow setup instructions in respective project documentation:
+        - [KwikPOS Live Setup Guide](projects/kwikpos-live.md)
+        - [KwikPOS API Setup Guide](projects/kwikpos-api.md)
+    - Verify both projects run locally
+
+4. **Familiarize with Database Systems**
+
+    - Set up local MySQL database for KwikPOS Live development
+    - Install SQL Server Management Studio or Azure Data Studio
+    - Get familiar with SQLite (DB Browser for SQLite)
+    - Set up PostgreSQL client for Supabase integration
+    - Review existing database schemas and query patterns
+
+5. **Start Developing**
+
+    - Review existing codebase patterns in both projects
+    - Understand the database query structure and ORM usage
+    - Pick up your first task or ticket
+    - Follow team coding standards and SQL best practices
+
+## Development Workflow
+
+1. **Branch Management**
+
+    - Create feature branches from main
+    - Use descriptive branch names (e.g., `feature/add-sales-report`)
+
+2. **Code Changes**
+
+    - Follow existing code patterns and conventions
+    - Write unit tests for new functionality
+    - Test locally before committing
+
+3. **Code Review**
+
+    - Submit pull requests for code review
+    - Address review comments, if any are provided
+
+4. **Deployment**
+
+    - Follow project-specific deployment procedures
+    - Coordinate with team for production deployments
 
 ## Getting Help
 
@@ -172,7 +180,17 @@ If you need assistance:
 
 - **Technical Questions:** Reach out to the development team
 - **Access Issues:** Contact your team lead for repository and AWS credentials
-- **Architecture Questions:** Review project-specific architecture documentation
+- **Architecture Questions:** Review project-specific documentation or consult senior developers
 - **Deployment Issues:** Check deployment guides or contact DevOps
+- **Prerequisites Help:** See the [Prerequisites](prerequisites.md) page
 
-Welcome to the KwikPOS development team!
+## Additional Resources
+
+- [Prerequisites Guide](prerequisites.md) - Required knowledge and tools
+- [KwikPOS Live Documentation](projects/kwikpos-live.md) - Detailed project guide
+- [KwikPOS API Documentation](projects/kwikpos-api.md) - Detailed project guide
+- [KwikPOS Website](https://www.kwikpos.ph) - Product information
+
+---
+
+Welcome to the KwikPOS development team! We're excited to have you on board.

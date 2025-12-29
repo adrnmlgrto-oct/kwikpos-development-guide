@@ -6,3 +6,7 @@ plugins:
 nav:
   - Developer Guide: index.md
   - Getting Started: getting-started.md
+  - Prerequisites: prerequisites.md
+  - Projects:
+      - KwikPOS Live (Backend): projects/kwikpos-live.md
+      - KwikPOS API (Kiosk Adapter): projects/kwikpos-api.md
