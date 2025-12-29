@@ -120,7 +120,7 @@ You'll be creating, optimizing, and maintaining SQL queries including:
 
 2. **Get Access & Onboarding**
 
-    - Contact your team lead for repository access to both projects
+    - Contact your team lead for organization access for the project repositories
     - Request credentials for:
         - AWS access (for KwikPOS Live deployment)
         - Database connections (MySQL, SQL Server, PostgreSQL)
