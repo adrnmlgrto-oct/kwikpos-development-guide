@@ -1,6 +1,7 @@
 site_name: KwikPOS Developer Guide
 site_url: https://adrnmlgrto-oct.github.io/kwikpos-development-guide/
 repo_url: https://github.com/adrnmlgrto-oct/kwikpos-development-guide
+use_directory_urls: false
 theme: shadcn
 plugins:
   - search
