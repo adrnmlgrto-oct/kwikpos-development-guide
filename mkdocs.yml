@@ -1,0 +1,8 @@
+site_name: KwikPOS Developer Guide
+theme: shadcn
+plugins:
+  - search
+  - excalidraw
+nav:
+  - Developer Guide: index.md
+  - Getting Started: getting-started.md
