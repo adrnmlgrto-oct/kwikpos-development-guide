@@ -13,6 +13,12 @@ KwikPOS API serves as an on-premise adapter that enables modern self-ordering ki
 - **Deployment:** Apache Tomcat 10.0
 - **Deployment Location:** On-premise POS machine
 
+## System Architecture
+
+The following sequence diagram illustrates how the KwikPOS API processes orders from kiosks to the legacy POS system:
+
+![KwikPOS API Sequence Diagram](../assets/images/kwikpos-api-sequence.svg)
+
 ## Key Features
 
 ### Kiosk Integration
