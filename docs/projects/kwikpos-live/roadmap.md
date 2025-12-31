@@ -336,8 +336,3 @@ KwikPOS Live serves as the central cloud backend for our POS ecosystem. It aggre
 - Performance optimizations
 - Security updates and patches
 - Support for existing integrations
-
----
-
-**Last Updated:** December 31, 2025<br />
-**Updated By:** Adrian Melegrito (Original Developer)
