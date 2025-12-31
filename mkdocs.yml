@@ -32,3 +32,5 @@ nav:
       - Architecture Considerations: projects/kwikpos-api/architecture.md
       - Troubleshooting: projects/kwikpos-api/troubleshooting.md
       - Roadmap & Planned Work: projects/kwikpos-api/roadmap.md
+  - FullyBooked (WebExt):
+      - Overview: projects/kwikpos-fullybooked/index.md
