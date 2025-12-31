@@ -26,7 +26,7 @@ We maintain these main projects:
 - Built with Spring Boot 2.7.2 (Java 8) and MySQL 8.0
 - Deployed on AWS EC2
 
-[View detailed documentation →](projects/kwikpos-live.md)
+[View detailed documentation →](projects/kwikpos-live/index.md)
 
 ### 2. KwikPOS API (Kiosk-to-POS Adapter)
 **On-premise bridge for legacy POS integration**
@@ -36,7 +36,7 @@ We maintain these main projects:
 - Built with Spring Boot 3.5.4 (Java 17)
 - Deployed on local POS machines
 
-[View detailed documentation →](projects/kwikpos-api.md)
+[View detailed documentation →](projects/kwikpos-api/index.md)
 
 ## Technology Stack Overview
 
@@ -132,8 +132,8 @@ You'll be creating, optimizing, and maintaining SQL queries including:
         - KwikPOS Live (Java 8, Spring Boot 2.7.2)
         - KwikPOS API (Java 17, Spring Boot 3.5.4)
     - Follow setup instructions in respective project documentation:
-        - [KwikPOS Live Setup Guide](projects/kwikpos-live.md)
-        - [KwikPOS API Setup Guide](projects/kwikpos-api.md)
+        - [KwikPOS Live Setup Guide](projects/kwikpos-live/setup.md)
+        - [KwikPOS API Setup Guide](projects/kwikpos-api/setup.md)
     - Verify both projects run locally
 
 4. **Familiarize with Database Systems**
@@ -187,8 +187,8 @@ If you need assistance:
 ## Additional Resources
 
 - [Prerequisites Guide](prerequisites.md) - Required knowledge and tools
-- [KwikPOS Live Documentation](projects/kwikpos-live.md) - Detailed project guide
-- [KwikPOS API Documentation](projects/kwikpos-api.md) - Detailed project guide
+- [KwikPOS Live Documentation](projects/kwikpos-live/index.md) - Detailed project guide
+- [KwikPOS API Documentation](projects/kwikpos-api/index.md) - Detailed project guide
 - [KwikPOS Website](https://www.kwikpos.ph) - Product information
 
 ---

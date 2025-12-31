@@ -81,68 +81,66 @@ Before you start developing for KwikPOS projects, ensure you have the necessary 
 ### Required Software
 
 #### For KwikPOS Live Development
-- **JDK 8**
-  ```bash
-  java -version  # Should show Java 8
-  ```
+- **OpenJDK 8**
+```bash
+java -version  # Should show Java 8
+```
 - **Maven 3.6+**
-  ```bash
-  mvn -version
-  ```
+```bash
+mvn -version
+```
 - **MySQL 8.0**
-  ```bash
-  mysql --version
-  ```
-- **Apache Tomcat 9.0** (for local testing)
+```bash
+mysql --version
+```
+- **Apache Tomcat 9.0**
 
 #### For KwikPOS API Development
-- **JDK 17**
-  ```bash
-  java -version  # Should show Java 17
-  ```
+- **OpenJDK 17**
+```bash
+java -version  # Should show Java 17
+```
 - **Maven 3.8+**
-  ```bash
-  mvn -version
-  ```
-- **Apache Tomcat 10.0** (for local testing)
+```bash
+mvn -version
+```
+- **Apache Tomcat 10.0**
 
 #### For Frontend Development (Angular)
 - **Node.js** (LTS version recommended)
-  ```bash
-  node --version
-  npm --version
-  ```
+```bash
+node --version
+npm --version
+```
 - **Angular CLI**
-  ```bash
-  npm install -g @angular/cli
-  ng version
-  ```
+```bash
+npm install -g @angular/cli
+ng version
+```
 - **TypeScript**
-  ```bash
-  npm install -g typescript
-  tsc --version
-  ```
+```bash
+npm install -g typescript
+tsc --version
+```
 
 #### For Flutter Development
 - **Flutter SDK** (latest stable version)
-  ```bash
-  flutter --version
-  flutter doctor  # Check installation
-  ```
+```bash
+flutter --version
+flutter doctor  # Check installation
+```
 - **Dart SDK** (comes with Flutter)
-  ```bash
-  dart --version
-  ```
+```bash
+dart --version
+```
 - **Android Studio** or **VS Code** with Flutter/Dart plugins
 - **Android SDK** (for Android development)
 - **Xcode** (for iOS development, macOS only)
 - **Chrome** or **Edge** (for web development)
 
 #### General Development Tools
-- **Git** (v2.30+)
-  ```bash
-  git --version
-  ```
+
+- **Git**
 - **IDE:** IntelliJ IDEA (recommended), Eclipse, or Visual Studio Code with Java Extensions
 - **API Testing:** Postman or similar REST API testing tool
 - **Database Management:** MySQL 8.0 CE Workbench (*MySQL*), DB Browser (*SQLite*), SQL Server Management Studio 19 (*MS SQL*), etc.
@@ -231,7 +229,8 @@ Before proceeding to project setup, verify you have:
 Once you've verified all prerequisites, proceed to:
 
 1. [Getting Started](getting-started.md) - Overview of the KwikPOS ecosystem
-2. [Projects](projects/kwikpos-live.md) - Detailed project documentation
+2. [KwikPOS Live](projects/kwikpos-live/index.md) - Backend project documentation
+3. [KwikPOS API](projects/kwikpos-api/index.md) - Kiosk adapter project documentation
 
 ## Getting Help
 

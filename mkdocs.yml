@@ -7,9 +7,25 @@ plugins:
   - search
   - excalidraw
 nav:
-  - Developer Guide: index.md
+  - Guide Overview: index.md
   - Getting Started: getting-started.md
   - Prerequisites: prerequisites.md
-  - Projects:
-      - KwikPOS Live (Backend): projects/kwikpos-live.md
-      - KwikPOS API (Kiosk Adapter): projects/kwikpos-api.md
+  - KwikPOS Live (Backend):
+      - Overview: projects/kwikpos-live/index.md
+      - Responsibilities: projects/kwikpos-live/responsibilities.md
+      - Deployment Architecture: projects/kwikpos-live/deployment.md
+      - Development Setup: projects/kwikpos-live/setup.md
+      - Project Structure: projects/kwikpos-live/structure.md
+      - Development Tasks: projects/kwikpos-live/development.md
+      - Testing: projects/kwikpos-live/testing.md
+      - Troubleshooting: projects/kwikpos-live/troubleshooting.md
+  - KwikPOS API (Kiosk Adapter):
+      - Overview: projects/kwikpos-api/index.md
+      - Responsibilities: projects/kwikpos-api/responsibilities.md
+      - Deployment Architecture: projects/kwikpos-api/deployment.md
+      - Development Setup: projects/kwikpos-api/setup.md
+      - Project Structure: projects/kwikpos-api/structure.md
+      - Development Tasks: projects/kwikpos-api/development.md
+      - Testing: projects/kwikpos-api/testing.md
+      - Architecture Considerations: projects/kwikpos-api/architecture.md
+      - Troubleshooting: projects/kwikpos-api/troubleshooting.md
