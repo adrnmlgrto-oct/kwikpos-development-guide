@@ -38,41 +38,55 @@ We maintain these main projects:
 
 [View detailed documentation →](projects/kwikpos-api/index.md)
 
+### 3. FullyBooked Integration (WebExt)
+**Client-specific POS integration for FullyBooked bookstore chain**
+
+- Custom integration between KwikPOS and FullyBooked's IMS system
+- Text file-based data import/export (tab-delimited)
+- Database-centric with custom SQL views and queries
+- Built on MS SQL Server
+
+[View detailed documentation →](projects/kwikpos-fullybooked/index.md)
+
 ## Technology Stack Overview
 
 ### Backend Technologies
 - **Java 8** - KwikPOS Live (with upgrade plans)
+- **Java 11** - FullyBooked Integration (likely, but unconfirmed)
 - **Java 17** - KwikPOS API
-- **Spring Boot 2.7.2** - KwikPOS Live
+- **Spring Boot 2.7.2** - KwikPOS Live and FullyBooked Integration
 - **Spring Boot 3.5.4** - KwikPOS API
 
 ### Databases
 - **MySQL 8.0** - KwikPOS Live primary database
+- **MS SQL Server** - KwikPOS API and FullyBooked integration
 
 ### Application Servers
-- **Apache Tomcat 9.0** - KwikPOS Live deployment
+- **Apache Tomcat 9.0** - KwikPOS Live and FullyBooked Integration deployment
 - **Apache Tomcat 10.0** - KwikPOS API deployment
 
 ### Infrastructure
 - **AWS EC2** - Cloud hosting for KwikPOS Live
-- **On-Premise** - Local POS machine hosting for KwikPOS API
+- **On-Premise** - Local POS machine hosting for KwikPOS API and FullyBooked Integration
 
 ## Architecture Comparison
 
-| Aspect | KwikPOS Live | KwikPOS API |
-|--------|--------------|-------------|
-| **Deployment** | Cloud (AWS EC2) | On-Premise (POS Machine) |
-| **Scope** | Multi-tenant | Single store |
-| **Purpose** | Central data hub | Kiosk-POS bridge |
-| **Database** | MySQL 8.0 | MS SQL Server |
-| **Clients** | Multiple tenants | Individual kiosks |
-| **Integration** | POS Terminals → Cloud | Kiosks → Legacy POS |
-| **Java Version** | Java 8 | Java 17 |
-| **Spring Boot** | 2.7.2 | 3.5.4 |
+| Aspect | KwikPOS Live | KwikPOS API | FullyBooked (WebExt) |
+|--------|--------------|-------------|----------------------|
+| **Deployment** | Cloud (AWS EC2) | On-Premise (POS Machine) | On-Premise (FullyBooked POS) |
+| **Scope** | Multi-tenant | Single store | Single client (FullyBooked) |
+| **Purpose** | Central data hub | Kiosk-POS bridge | POS-IMS integration |
+| **Database** | MySQL 8.0 | MS SQL Server | MS SQL Server |
+| **Clients** | Multiple tenants | Individual kiosks | FullyBooked stores |
+| **Integration** | POS Terminals → Cloud | Kiosks → Legacy POS | POS ↔ IMS (text files) |
+| **Java Version** | Java 8 | Java 17 | Java 11 (likely) |
+| **Spring Boot** | 2.7.2 | 3.5.4 | 2.7.2 |
+| **App Server** | Tomcat 9.0 | Tomcat 10.0 | Tomcat 9.0 |
+| **Primary Tech** | Spring Boot API | Spring Boot API | SQL views/queries |
 
 ## Your Work Scope
 
-As a developer on the KwikPOS team, you'll work on **both projects** depending on the features and requirements. Your work will primarily involve:
+As a developer on the KwikPOS team, you'll work on **multiple projects** depending on the features and requirements. Your work will primarily involve:
 
 ### Backend Development
 - Building and maintaining RESTful APIs for both KwikPOS Live and KwikPOS API
@@ -91,7 +105,7 @@ As a developer on the KwikPOS team, you'll work on **both projects** depending o
 A significant portion of your work will involve **writing SQL queries** across multiple database systems:
 
 - **MySQL** - For KwikPOS Live (primary backend database)
-- **Microsoft SQL Server** - For KwikPOS API and legacy system integration
+- **Microsoft SQL Server** - For KwikPOS API, FullyBooked integration, and legacy system integration
 - **SQLite** - For KwikPOS application local storage
 - **PostgreSQL** - For Supabase integration
 
@@ -108,6 +122,12 @@ You'll be creating, optimizing, and maintaining SQL queries including:
 - Multi-tenant architecture implementation
 - Legacy system integration and data transformation
 - Testing and deployment across different environments
+
+### Client-Specific Integrations
+- **FullyBooked Integration** - Custom SQL views, queries, and text file import/export
+- Writing and optimizing database views for data extraction
+- Creating import procedures for external data sources
+- Maintaining integration-specific documentation
 
 ## Quick Start Steps
 

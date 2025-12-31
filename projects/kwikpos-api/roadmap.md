@@ -273,8 +273,3 @@ Do note that it might be updated in the future where you would need to integrate
 - Bug fixes and technical improvements as identified
 - Performance optimizations
 - Security updates and patches
-
----
-
-**Last Updated:** December 31, 2025<br />
-**Updated By:** Adrian Melegrito (Original Developer)
