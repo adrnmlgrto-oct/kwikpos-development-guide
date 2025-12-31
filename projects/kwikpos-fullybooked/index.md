@@ -1,6 +1,4 @@
-# KwikPOS x FullyBooked Integration
-
-## Overview
+# Overview
 
 **Purpose:** Custom integration between KwikPOS POS system and FullyBooked's IMS system
 
