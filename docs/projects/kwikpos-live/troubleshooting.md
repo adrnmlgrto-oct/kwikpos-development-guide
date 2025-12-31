@@ -7,6 +7,7 @@
 **Symptoms:** Maven build fails or produces errors
 
 **Solutions:**
+
 - Verify JDK 8 is active: `java -version`
 - Clean Maven cache: `mvn clean`
 - Update dependencies: `mvn dependency:resolve`
@@ -16,6 +17,7 @@
 **Symptoms:** Cannot connect to MySQL database
 
 **Solutions:**
+
 - Check MySQL service is running
 - Verify credentials in `application.properties`
 - Ensure database exists
@@ -26,6 +28,7 @@
 **Symptoms:** Application fails to deploy or start on Tomcat
 
 **Solutions:**
+
 - Check Tomcat logs in logs/catalina.out
 - Verify WAR file is not corrupted
 - Ensure port 8080 (*or the configured port*) is available

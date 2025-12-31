@@ -7,6 +7,7 @@
 **Symptoms:** Maven build fails or produces errors
 
 **Solutions:**
+
 - Verify JDK 17 is active: `java -version`
 - Clean Maven cache: `mvn clean`
 - Update dependencies: `mvn dependency:resolve`
@@ -16,6 +17,7 @@
 **Symptoms:** Kiosks cannot reach the API server
 
 **Solutions:**
+
 - Verify kiosk can reach the API server
 - Check firewall settings
 - Ensure correct port configuration
@@ -26,6 +28,7 @@
 **Symptoms:** Orders not appearing in POS system
 
 **Solutions:**
+
 - Verify POS system is running
 - Check POS connection settings
 - Review transformation logic
@@ -36,6 +39,7 @@
 **Symptoms:** Application fails to deploy or start
 
 **Solutions:**
+
 - Ensure using Tomcat 10.0 (not 9.0)
 - Check Tomcat logs in logs/catalina.out
 - Verify WAR file compatibility
