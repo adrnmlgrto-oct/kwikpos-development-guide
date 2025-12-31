@@ -10,6 +10,7 @@ nav:
   - Guide Overview: index.md
   - Getting Started: getting-started.md
   - Prerequisites: prerequisites.md
+  - AI Usage Guidelines: ai-usage-guidelines.md
   - KwikPOS Live (Backend):
       - Overview: projects/kwikpos-live/index.md
       - Responsibilities: projects/kwikpos-live/responsibilities.md
