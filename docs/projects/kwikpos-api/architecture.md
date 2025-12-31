@@ -31,6 +31,7 @@ The system uses the adapter pattern to bridge modern and legacy systems without 
 
 ### Separation of Concerns
 Clear separation between:
+
 - Kiosk communication layer
 - Data transformation layer
 - POS integration layer

@@ -22,15 +22,14 @@ mvn verify
 - Use Postman collections for API testing
 - Test multi-tenant scenarios
 - Verify data consistency
+- Always try to locally test changes to your own database before production
 
 ## Testing Checklist
 
 When testing new features or changes:
 
-- [ ] Unit tests pass locally
-- [ ] Integration tests pass
-- [ ] Manual API testing with Postman
-- [ ] Multi-tenant scenarios verified
-- [ ] Database changes tested
-- [ ] Error handling tested
-- [ ] Edge cases considered
+- Manual API testing with Postman
+- Multi-tenant scenarios verified
+- Database changes tested locally before implementing on production
+- Error handling tested
+- Edge cases considered
