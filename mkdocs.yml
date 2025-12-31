@@ -19,6 +19,7 @@ nav:
       - Development Tasks: projects/kwikpos-live/development.md
       - Testing: projects/kwikpos-live/testing.md
       - Troubleshooting: projects/kwikpos-live/troubleshooting.md
+      - Roadmap & Planned Work: projects/kwikpos-live/roadmap.md
   - KwikPOS API (Kiosk Adapter):
       - Overview: projects/kwikpos-api/index.md
       - Responsibilities: projects/kwikpos-api/responsibilities.md
@@ -29,3 +30,4 @@ nav:
       - Testing: projects/kwikpos-api/testing.md
       - Architecture Considerations: projects/kwikpos-api/architecture.md
       - Troubleshooting: projects/kwikpos-api/troubleshooting.md
+      - Roadmap & Planned Work: projects/kwikpos-api/roadmap.md

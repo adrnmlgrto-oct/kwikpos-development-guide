@@ -46,6 +46,7 @@ KwikPOS Live is the central cloud-based backend system that aggregates and manag
 - [Development Tasks](development.md) - Common development workflows
 - [Testing](testing.md) - Testing strategies and practices
 - [Troubleshooting](troubleshooting.md) - Common issues and solutions
+- [Roadmap & Planned Work](roadmap.md) - Future features and integrations
 
 ## Getting Help
 

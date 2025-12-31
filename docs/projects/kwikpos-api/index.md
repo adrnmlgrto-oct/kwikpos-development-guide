@@ -58,6 +58,7 @@ This is the key value proposition:
 - [Testing](testing.md) - Testing strategies and practices
 - [Architecture Considerations](architecture.md) - Design principles and patterns
 - [Troubleshooting](troubleshooting.md) - Common issues and solutions
+- [Roadmap & Planned Work](roadmap.md) - Future features and integrations
 
 ## Getting Help
 
