@@ -6,12 +6,16 @@ theme: shadcn
 plugins:
   - search
   - excalidraw
+markdown_extensions:
+  - admonition
+  - pymdownx.tasklist:
+      custom_checkbox: true
 nav:
-  - Guide Overview: index.md
-  - Getting Started: getting-started.md
+  - Introduction: index.md
   - Prerequisites: prerequisites.md
+  - Getting Started: getting-started.md
   - AI Usage Guidelines: ai-usage-guidelines.md
-  - About: about.md
+  - About this Guide: about.md
   - KwikPOS Live (Backend):
       - Overview: projects/kwikpos-live/index.md
       - Responsibilities: projects/kwikpos-live/responsibilities.md

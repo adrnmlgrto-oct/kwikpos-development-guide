@@ -12,6 +12,16 @@ KwikPOS Live is the central cloud-based backend system that aggregates and manag
 - **Deployment:** Apache Tomcat 9.0 on AWS EC2
 - **Deployment Method:** Manual WAR file updates
 
+## Database Configuration
+
+### Database Schema
+
+- **Database Name:** `kwikpos_live_legacy`
+- **User:** `root` (for local development)
+- **Password:** Uses your local MySQL root user password
+
+When running the project locally, the application will connect to the `kwikpos_live_legacy` database using the root user credentials configured on your local MySQL installation.
+
 ## Key Features
 
 ### Multi-Tenant Architecture

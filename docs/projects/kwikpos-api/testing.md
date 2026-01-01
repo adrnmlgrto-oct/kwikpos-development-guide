@@ -35,11 +35,11 @@ mvn verify
 
 When testing new features or changes:
 
-- ✅ Unit tests pass locally
-- ✅ Integration tests pass
-- ✅ Postman collection tests successful
-- ✅ Order transformation verified
-- ✅ POS communication tested (if available)
-- ✅ Error handling scenarios covered
-- ✅ Concurrent request handling verified
-- ✅ Performance under load tested
+- [ ] Unit tests pass locally
+- [ ] Integration tests pass
+- [ ] Postman collection tests successful
+- [ ] Order transformation verified
+- [ ] POS communication tested (if available)
+- [ ] Error handling scenarios covered
+- [ ] Concurrent request handling verified
+- [ ] Performance under load tested

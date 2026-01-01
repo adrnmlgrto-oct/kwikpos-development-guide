@@ -24,6 +24,33 @@ Their POS application is a **heavily** modified version of WinPOS, which is tech
 
 **Note:** While this integration runs on a Spring Boot application deployed via Tomcat, most development work involves database/SQL-level modifications rather than application code changes.
 
+## Database Configuration
+
+### Database Schemas
+
+The FullyBooked integration utilizes multiple MS SQL Server databases:
+
+#### `serverposdb`
+- **Purpose:** Primary POS application database
+- **Usage:** Main database where most SQL view editing and modifications occur
+- **Role:** Contains core POS data for transactions, items, and operations
+- **Development Note:** This is the primary database you'll work with when creating or modifying views for data exports
+
+#### `KwikPOS_AddIn`
+- **Purpose:** Spring Boot integration configuration database
+- **Usage:** Stores integration-specific settings and configurations
+- **Key Contents:**
+    - User configurations
+    - Cron job settings (e.g., boolean flags for enabling/disabling scheduled text file exports to IMS)
+    - FTP connection details (IP addresses, credentials)
+    - Database-centric approach configuration tables
+    - `dbo.FB_IMSFILE_LKP` - Lookup table for IMS file exports
+        - Contains rows identifying resources to export
+        - Maps view tables to query for each export type
+        - Defines export configurations and mappings
+
+**Database-Centric Approach:** This integration follows a database-centric design pattern where configuration and logic are stored in database tables rather than hardcoded in the application, allowing for flexible modifications without code changes.
+
 ## Key Features
 
 ### Data Export System

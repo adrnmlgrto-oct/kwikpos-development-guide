@@ -106,7 +106,7 @@ A significant portion of your work will involve **writing SQL queries** across m
 
 - **MySQL** - For KwikPOS Live (primary backend database)
 - **Microsoft SQL Server** - For KwikPOS API, FullyBooked integration, and legacy system integration
-- **SQLite** - For KwikPOS application local storage
+- **SQLite** - For KwikPOS Pro application local storage
 - **PostgreSQL** - For Supabase integration
 
 You'll be creating, optimizing, and maintaining SQL queries including:

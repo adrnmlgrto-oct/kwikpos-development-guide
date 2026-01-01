@@ -166,9 +166,9 @@ Items endpoint returns menu items without calorie information. The POS database 
 
 **Current Progress:**
 
-- ✅ Initial investigation started - identifying calorie column in POS database
-- ✅ Column mapping and SQL query updates already done
-- ⏳ Still needs: Testing, validation, and deployment
+- [x] Initial investigation started - identifying calorie column in POS database
+- [x] Column mapping and SQL query updates already done
+- [ ] Still needs: Testing, validation, and deployment
 
 **Implementation Details:**
 

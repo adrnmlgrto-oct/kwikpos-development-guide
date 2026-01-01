@@ -11,6 +11,62 @@ KwikPOS API serves as an on-premise adapter that enables modern self-ordering ki
 - **Deployment:** Apache Tomcat 10.0
 - **Deployment Location:** On-premise POS machine
 
+## Database Configuration
+
+### Database Schemas
+
+KwikPOS API connects to the following database schemas used by the legacy POS application:
+
+- **`posdb`** - Primary database schema for POS operations
+- **`orderdb`** - Database schema for order management
+
+These schemas are part of the legacy POS application's database structure and are accessed by the API adapter to facilitate communication between modern kiosks and the legacy POS system.
+
+### Key Tables for Order Processing
+
+The API primarily writes to the following tables in the `orderdb` schema when processing orders from kiosks:
+
+#### `dbo.SALESORDER`
+- **Purpose:** Stores order header information
+- **Key Data:** Order reference number, customer details, order timestamp, total amount, order status
+- **Usage:** Each order from a kiosk creates a new record in this table with a unique order reference number
+
+**Order Statuses:**
+
+- **`"PENDING"`** - Initial status when order is just sent in from the kiosk
+    - This is the status the POS looks up to identify new orders waiting to be retrieved by the cashier
+    - Orders remain in this status until the cashier retrieves them at the counter
+    - **Auto-Cleanup:** Pending orders that exceed 1 hour are automatically deleted
+    - **Use Case:** When customers send in an order and select "pay via cash" but don't arrive at the counter to complete payment
+
+- **`"RETRIEVED"`** - Order has been fulfilled and completed
+    - Set when the order sent by the kiosk to the POS has been retrieved by the cashier
+    - Indicates the customer has paid and the order has been fulfilled
+    - **Final status** for completed orders
+
+#### `dbo.SALESORDER_ITEM`
+- **Purpose:** Stores individual items within an order
+- **Key Data:** Item details, quantity, price, modifiers, linked to order reference number
+- **Usage:** Multiple records created per order - one for each item ordered
+- **Relationship:** Links to `dbo.SALESORDER` via order reference number
+
+#### `dbo.SALESORDER_PAYMENT`
+- **Purpose:** Stores payment information for cashless orders
+- **Key Data:** Payment method, amount, transaction details, payment status
+- **Usage:** **Currently not in active use** - Reserved for future cashless payment integration
+- **Status:** Payment integration with legacy POS requires additional modifications on the POS side (auto-print, event execution) which are not yet implemented
+- **Note:** Only applicable for `'CASHLESS'` order types where payment is processed on the self-ordering kiosk
+
+**Important:** As of the current implementation, only `dbo.SALESORDER` and `dbo.SALESORDER_ITEM` are actively used. The `dbo.SALESORDER_PAYMENT` table exists but is not utilized until cashless payment integration is completed on the legacy POS application.
+
+### Database Sequences
+
+#### `dbo.REG_SO_SEQ`
+- **Purpose:** Sequence generator for sales order reference numbers
+- **Usage:** Generates unique, sequential order reference numbers for orders from kiosks
+- **Naming Convention:** "REG" prefix indicates regular/standard kiosk orders
+- **Future Considerations:** The naming pattern allows for potential addition of separate sequences for different order sources (e.g., *Grab Food*, *Food Panda*) if needed in the future, though this is not currently implemented
+
 ## System Architecture
 
 The following sequence diagram illustrates how the KwikPOS API processes orders from kiosks to the legacy POS system:
