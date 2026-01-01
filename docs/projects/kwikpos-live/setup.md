@@ -46,7 +46,8 @@ mvn spring-boot:run
 
 ### 6. Verify Installation
 
-- Access http://localhost:8080 (or configured port)
+- Access via
+    - http://localhost:8082
 - Test API endpoints using Postman
 
 ## Additional Resources

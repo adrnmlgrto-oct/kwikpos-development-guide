@@ -45,12 +45,14 @@ mvn clean install
 mvn spring-boot:run
 
 # Or deploy WAR to local Tomcat 10
-cp target/kwikpos-api.war /path/to/tomcat10/webapps/
+cp target/kwikpos-legacy-adapter.war /path/to/tomcat10/webapps/
 ```
 
 ### 5. Verify Installation
 
-- Access http://localhost:8080 (or configured port)
+- Access via:
+    - http://localhost:8083
+    - http://localhost:8083/swagger-ui/index.html (Swagger UI)
 - Test API endpoints using Postman
 - Verify kiosk connectivity
 

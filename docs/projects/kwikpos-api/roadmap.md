@@ -250,24 +250,24 @@ Do note that it might be updated in the future where you would need to integrate
 
 ### Q4 2025 / Q1 2026 (Immediate Priority)
 - **Calorie Count Implementation** - MUST complete before Phase 1 deadline (Dec 20, 2025)
-  - Complete database column mapping validation
-  - Finalize SQL query updates
-  - Testing and validation
-  - Deployment to individual client store branches with KwikPOS API
+    - Complete database column mapping validation
+    - Finalize SQL query updates
+    - Testing and validation
+    - Deployment to individual client store branches with KwikPOS API
 
 ### 2026 (As Needed)
 - **KwikPOS Terminal Support** - Timeline TBD based on product launch schedule
-  - Requirements gathering and technical design
-  - Implementation of table management features
-  - Waiter authentication and order assignment
-  - Testing with actual terminal devices
+    - Requirements gathering and technical design
+    - Implementation of table management features
+    - Waiter authentication and order assignment
+    - Testing with actual terminal devices
 
 ### Future (No Specific Timeline)
 - **Multi-POS Provider Support** - Will be triggered by sales team requirements
-  - Determine which POS systems to support based on client demand
-  - Design abstraction layer for multi-POS compatibility
-  - Implement adapters for priority POS systems
-  - Testing and validation with each POS provider
+    - Determine which POS systems to support based on client demand
+    - Design abstraction layer for multi-POS compatibility
+    - Implement adapters for priority POS systems
+    - Testing and validation with each POS provider
 
 ### Ongoing
 - Bug fixes and technical improvements as identified
