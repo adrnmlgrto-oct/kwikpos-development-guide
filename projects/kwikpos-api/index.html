@@ -278,7 +278,26 @@
         class="hover:bg-sidebar-accent hover:text-sidebar-accent-foreground peer/menu-button flex items-center gap-2 rounded-md p-2 text-left outline-hidden ring-sidebar-ring transition-[width,height,padding] focus-visible:ring-2 active:bg-sidebar-accent active:text-sidebar-accent-foreground disabled:pointer-events-none disabled:opacity-50 group-has-data-[sidebar=menu-action]/menu-item:pr-8 aria-disabled:pointer-events-none aria-disabled:opacity-50 data-[active=true]:font-medium data-[active=true]:text-sidebar-accent-foreground data-[state=open]:hover:bg-sidebar-accent data-[state=open]:hover:text-sidebar-accent-foreground group-data-[collapsible=icon]:size-8! group-data-[collapsible=icon]:p-2! [&>span:last-child]:truncate [&>svg]:size-4 [&>svg]:shrink-0 data-[active=true]:bg-accent data-[active=true]:border-accent 3xl:fixed:w-full 3xl:fixed:max-w-48 relative h-[30px] w-fit overflow-visible border border-transparent text-[0.8rem] font-medium after:absolute after:inset-x-0 after:-inset-y-1 after:z-0 after:rounded-md">
 
         
-        Guide Overview
+        Introduction
+        
+
+        
+
+        
+
+        
+    </a>
+</li>
+                
+                
+                
+                <li data-slot="sidebar-menu-item" data-sidebar="menu-item" class="group/menu-item relative">
+    <a data-slot="sidebar-menu-button" data-active="false" data-sidebar="menu-button"
+        data-size="default" href="/kwikpos-development-guide/prerequisites.html"
+        class="hover:bg-sidebar-accent hover:text-sidebar-accent-foreground peer/menu-button flex items-center gap-2 rounded-md p-2 text-left outline-hidden ring-sidebar-ring transition-[width,height,padding] focus-visible:ring-2 active:bg-sidebar-accent active:text-sidebar-accent-foreground disabled:pointer-events-none disabled:opacity-50 group-has-data-[sidebar=menu-action]/menu-item:pr-8 aria-disabled:pointer-events-none aria-disabled:opacity-50 data-[active=true]:font-medium data-[active=true]:text-sidebar-accent-foreground data-[state=open]:hover:bg-sidebar-accent data-[state=open]:hover:text-sidebar-accent-foreground group-data-[collapsible=icon]:size-8! group-data-[collapsible=icon]:p-2! [&>span:last-child]:truncate [&>svg]:size-4 [&>svg]:shrink-0 data-[active=true]:bg-accent data-[active=true]:border-accent 3xl:fixed:w-full 3xl:fixed:max-w-48 relative h-[30px] w-fit overflow-visible border border-transparent text-[0.8rem] font-medium after:absolute after:inset-x-0 after:-inset-y-1 after:z-0 after:rounded-md">
+
+        
+        Prerequisites
         
 
         
@@ -312,11 +331,11 @@
                 
                 <li data-slot="sidebar-menu-item" data-sidebar="menu-item" class="group/menu-item relative">
     <a data-slot="sidebar-menu-button" data-active="false" data-sidebar="menu-button"
-        data-size="default" href="/kwikpos-development-guide/prerequisites.html"
+        data-size="default" href="/kwikpos-development-guide/status-code-reference.html"
         class="hover:bg-sidebar-accent hover:text-sidebar-accent-foreground peer/menu-button flex items-center gap-2 rounded-md p-2 text-left outline-hidden ring-sidebar-ring transition-[width,height,padding] focus-visible:ring-2 active:bg-sidebar-accent active:text-sidebar-accent-foreground disabled:pointer-events-none disabled:opacity-50 group-has-data-[sidebar=menu-action]/menu-item:pr-8 aria-disabled:pointer-events-none aria-disabled:opacity-50 data-[active=true]:font-medium data-[active=true]:text-sidebar-accent-foreground data-[state=open]:hover:bg-sidebar-accent data-[state=open]:hover:text-sidebar-accent-foreground group-data-[collapsible=icon]:size-8! group-data-[collapsible=icon]:p-2! [&>span:last-child]:truncate [&>svg]:size-4 [&>svg]:shrink-0 data-[active=true]:bg-accent data-[active=true]:border-accent 3xl:fixed:w-full 3xl:fixed:max-w-48 relative h-[30px] w-fit overflow-visible border border-transparent text-[0.8rem] font-medium after:absolute after:inset-x-0 after:-inset-y-1 after:z-0 after:rounded-md">
 
         
-        Prerequisites
+        Status Code Reference
         
 
         
@@ -354,7 +373,7 @@
         class="hover:bg-sidebar-accent hover:text-sidebar-accent-foreground peer/menu-button flex items-center gap-2 rounded-md p-2 text-left outline-hidden ring-sidebar-ring transition-[width,height,padding] focus-visible:ring-2 active:bg-sidebar-accent active:text-sidebar-accent-foreground disabled:pointer-events-none disabled:opacity-50 group-has-data-[sidebar=menu-action]/menu-item:pr-8 aria-disabled:pointer-events-none aria-disabled:opacity-50 data-[active=true]:font-medium data-[active=true]:text-sidebar-accent-foreground data-[state=open]:hover:bg-sidebar-accent data-[state=open]:hover:text-sidebar-accent-foreground group-data-[collapsible=icon]:size-8! group-data-[collapsible=icon]:p-2! [&>span:last-child]:truncate [&>svg]:size-4 [&>svg]:shrink-0 data-[active=true]:bg-accent data-[active=true]:border-accent 3xl:fixed:w-full 3xl:fixed:max-w-48 relative h-[30px] w-fit overflow-visible border border-transparent text-[0.8rem] font-medium after:absolute after:inset-x-0 after:-inset-y-1 after:z-0 after:rounded-md">
 
         
-        About
+        About this Guide
         
 
         
@@ -919,6 +938,66 @@
 <li><strong>Deployment:</strong> Apache Tomcat 10.0</li>
 <li><strong>Deployment Location:</strong> On-premise POS machine</li>
 </ul>
+<h2 id="database-configuration">Database Configuration</h2>
+<h3 id="database-schemas">Database Schemas</h3>
+<p>KwikPOS API connects to the following database schemas used by the legacy POS application:</p>
+<ul>
+<li><strong><code>posdb</code></strong> - Primary database schema for POS operations</li>
+<li><strong><code>orderdb</code></strong> - Database schema for order management</li>
+</ul>
+<p>These schemas are part of the legacy POS application's database structure and are accessed by the API adapter to facilitate communication between modern kiosks and the legacy POS system.</p>
+<h3 id="key-tables-for-order-processing">Key Tables for Order Processing</h3>
+<p>The API primarily writes to the following tables in the <code>orderdb</code> schema when processing orders from kiosks:</p>
+<h4 id="dbosalesorder"><code>dbo.SALESORDER</code></h4>
+<ul>
+<li><strong>Purpose:</strong> Stores order header information</li>
+<li><strong>Key Data:</strong> Order reference number, customer details, order timestamp, total amount, order status</li>
+<li><strong>Usage:</strong> Each order from a kiosk creates a new record in this table with a unique order reference number</li>
+</ul>
+<p><strong>Order Statuses:</strong></p>
+<ul>
+<li>
+<p><strong><code>"PENDING"</code></strong> - Initial status when order is just sent in from the kiosk</p>
+<ul>
+<li>This is the status the POS looks up to identify new orders waiting to be retrieved by the cashier</li>
+<li>Orders remain in this status until the cashier retrieves them at the counter</li>
+<li><strong>Auto-Cleanup:</strong> Pending orders that exceed 1 hour are automatically deleted</li>
+<li><strong>Use Case:</strong> When customers send in an order and select "pay via cash" but don't arrive at the counter to complete payment</li>
+</ul>
+</li>
+<li>
+<p><strong><code>"RETRIEVED"</code></strong> - Order has been fulfilled and completed</p>
+<ul>
+<li>Set when the order sent by the kiosk to the POS has been retrieved by the cashier</li>
+<li>Indicates the customer has paid and the order has been fulfilled</li>
+<li><strong>Final status</strong> for completed orders</li>
+</ul>
+</li>
+</ul>
+<h4 id="dbosalesorder_item"><code>dbo.SALESORDER_ITEM</code></h4>
+<ul>
+<li><strong>Purpose:</strong> Stores individual items within an order</li>
+<li><strong>Key Data:</strong> Item details, quantity, price, modifiers, linked to order reference number</li>
+<li><strong>Usage:</strong> Multiple records created per order - one for each item ordered</li>
+<li><strong>Relationship:</strong> Links to <code>dbo.SALESORDER</code> via order reference number</li>
+</ul>
+<h4 id="dbosalesorder_payment"><code>dbo.SALESORDER_PAYMENT</code></h4>
+<ul>
+<li><strong>Purpose:</strong> Stores payment information for cashless orders</li>
+<li><strong>Key Data:</strong> Payment method, amount, transaction details, payment status</li>
+<li><strong>Usage:</strong> <strong>Currently not in active use</strong> - Reserved for future cashless payment integration</li>
+<li><strong>Status:</strong> Payment integration with legacy POS requires additional modifications on the POS side (auto-print, event execution) which are not yet implemented</li>
+<li><strong>Note:</strong> Only applicable for <code>'CASHLESS'</code> order types where payment is processed on the self-ordering kiosk</li>
+</ul>
+<p><strong>Important:</strong> As of the current implementation, only <code>dbo.SALESORDER</code> and <code>dbo.SALESORDER_ITEM</code> are actively used. The <code>dbo.SALESORDER_PAYMENT</code> table exists but is not utilized until cashless payment integration is completed on the legacy POS application.</p>
+<h3 id="database-sequences">Database Sequences</h3>
+<h4 id="dboreg_so_seq"><code>dbo.REG_SO_SEQ</code></h4>
+<ul>
+<li><strong>Purpose:</strong> Sequence generator for sales order reference numbers</li>
+<li><strong>Usage:</strong> Generates unique, sequential order reference numbers for orders from kiosks</li>
+<li><strong>Naming Convention:</strong> "REG" prefix indicates regular/standard kiosk orders</li>
+<li><strong>Future Considerations:</strong> The naming pattern allows for potential addition of separate sequences for different order sources (e.g., <em>Grab Food</em>, <em>Food Panda</em>) if needed in the future, though this is not currently implemented</li>
+</ul>
 <h2 id="system-architecture">System Architecture</h2>
 <p>The following sequence diagram illustrates how the KwikPOS API processes orders from kiosks to the legacy POS system:</p>
 <p><img alt="KwikPOS API Sequence Diagram" src="../../assets/images/kwikpos-api-sequence.svg" /></p>
@@ -1025,7 +1104,13 @@
                     
                     <a class="text-2xl font-medium" href="../../index.html">
                         
-                        Guide Overview
+                        Introduction
+                        
+                    </a>
+                    
+                    <a class="text-2xl font-medium" href="../../prerequisites.html">
+                        
+                        Prerequisites
                         
                     </a>
                     
@@ -1035,9 +1120,9 @@
                         
                     </a>
                     
-                    <a class="text-2xl font-medium" href="../../prerequisites.html">
+                    <a class="text-2xl font-medium" href="../../status-code-reference.html">
                         
-                        Prerequisites
+                        Status Code Reference
                         
                     </a>
                     
@@ -1049,7 +1134,7 @@
                     
                     <a class="text-2xl font-medium" href="../../about.html">
                         
-                        About
+                        About this Guide
                         
                     </a>
                     
@@ -1254,6 +1339,34 @@
             data-active="false" data-depth="2">
             Tech Stack
         </a>
+        
+
+        
+        <a href="#database-configuration"
+            class="text-muted-foreground hover:text-foreground data-[active=true]:text-foreground text-[0.8rem] no-underline transition-colors data-[depth=3]:pl-4 data-[depth=4]:pl-6"
+            data-active="false" data-depth="2">
+            Database Configuration
+        </a>
+        
+        
+        <a href="#database-schemas"
+            class="text-muted-foreground hover:text-foreground data-[active=true]:text-foreground text-[0.8rem] no-underline transition-colors data-[depth=3]:pl-4 data-[depth=4]:pl-6"
+            data-active="false" data-depth="3">
+            Database Schemas
+        </a>
+        
+        <a href="#key-tables-for-order-processing"
+            class="text-muted-foreground hover:text-foreground data-[active=true]:text-foreground text-[0.8rem] no-underline transition-colors data-[depth=3]:pl-4 data-[depth=4]:pl-6"
+            data-active="false" data-depth="3">
+            Key Tables for Order Processing
+        </a>
+        
+        <a href="#database-sequences"
+            class="text-muted-foreground hover:text-foreground data-[active=true]:text-foreground text-[0.8rem] no-underline transition-colors data-[depth=3]:pl-4 data-[depth=4]:pl-6"
+            data-active="false" data-depth="3">
+            Database Sequences
+        </a>
+        
         
 
         

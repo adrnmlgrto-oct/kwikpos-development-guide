@@ -278,7 +278,26 @@
         class="hover:bg-sidebar-accent hover:text-sidebar-accent-foreground peer/menu-button flex items-center gap-2 rounded-md p-2 text-left outline-hidden ring-sidebar-ring transition-[width,height,padding] focus-visible:ring-2 active:bg-sidebar-accent active:text-sidebar-accent-foreground disabled:pointer-events-none disabled:opacity-50 group-has-data-[sidebar=menu-action]/menu-item:pr-8 aria-disabled:pointer-events-none aria-disabled:opacity-50 data-[active=true]:font-medium data-[active=true]:text-sidebar-accent-foreground data-[state=open]:hover:bg-sidebar-accent data-[state=open]:hover:text-sidebar-accent-foreground group-data-[collapsible=icon]:size-8! group-data-[collapsible=icon]:p-2! [&>span:last-child]:truncate [&>svg]:size-4 [&>svg]:shrink-0 data-[active=true]:bg-accent data-[active=true]:border-accent 3xl:fixed:w-full 3xl:fixed:max-w-48 relative h-[30px] w-fit overflow-visible border border-transparent text-[0.8rem] font-medium after:absolute after:inset-x-0 after:-inset-y-1 after:z-0 after:rounded-md">
 
         
-        Guide Overview
+        Introduction
+        
+
+        
+
+        
+
+        
+    </a>
+</li>
+                
+                
+                
+                <li data-slot="sidebar-menu-item" data-sidebar="menu-item" class="group/menu-item relative">
+    <a data-slot="sidebar-menu-button" data-active="false" data-sidebar="menu-button"
+        data-size="default" href="/kwikpos-development-guide/prerequisites.html"
+        class="hover:bg-sidebar-accent hover:text-sidebar-accent-foreground peer/menu-button flex items-center gap-2 rounded-md p-2 text-left outline-hidden ring-sidebar-ring transition-[width,height,padding] focus-visible:ring-2 active:bg-sidebar-accent active:text-sidebar-accent-foreground disabled:pointer-events-none disabled:opacity-50 group-has-data-[sidebar=menu-action]/menu-item:pr-8 aria-disabled:pointer-events-none aria-disabled:opacity-50 data-[active=true]:font-medium data-[active=true]:text-sidebar-accent-foreground data-[state=open]:hover:bg-sidebar-accent data-[state=open]:hover:text-sidebar-accent-foreground group-data-[collapsible=icon]:size-8! group-data-[collapsible=icon]:p-2! [&>span:last-child]:truncate [&>svg]:size-4 [&>svg]:shrink-0 data-[active=true]:bg-accent data-[active=true]:border-accent 3xl:fixed:w-full 3xl:fixed:max-w-48 relative h-[30px] w-fit overflow-visible border border-transparent text-[0.8rem] font-medium after:absolute after:inset-x-0 after:-inset-y-1 after:z-0 after:rounded-md">
+
+        
+        Prerequisites
         
 
         
@@ -312,11 +331,11 @@
                 
                 <li data-slot="sidebar-menu-item" data-sidebar="menu-item" class="group/menu-item relative">
     <a data-slot="sidebar-menu-button" data-active="false" data-sidebar="menu-button"
-        data-size="default" href="/kwikpos-development-guide/prerequisites.html"
+        data-size="default" href="/kwikpos-development-guide/status-code-reference.html"
         class="hover:bg-sidebar-accent hover:text-sidebar-accent-foreground peer/menu-button flex items-center gap-2 rounded-md p-2 text-left outline-hidden ring-sidebar-ring transition-[width,height,padding] focus-visible:ring-2 active:bg-sidebar-accent active:text-sidebar-accent-foreground disabled:pointer-events-none disabled:opacity-50 group-has-data-[sidebar=menu-action]/menu-item:pr-8 aria-disabled:pointer-events-none aria-disabled:opacity-50 data-[active=true]:font-medium data-[active=true]:text-sidebar-accent-foreground data-[state=open]:hover:bg-sidebar-accent data-[state=open]:hover:text-sidebar-accent-foreground group-data-[collapsible=icon]:size-8! group-data-[collapsible=icon]:p-2! [&>span:last-child]:truncate [&>svg]:size-4 [&>svg]:shrink-0 data-[active=true]:bg-accent data-[active=true]:border-accent 3xl:fixed:w-full 3xl:fixed:max-w-48 relative h-[30px] w-fit overflow-visible border border-transparent text-[0.8rem] font-medium after:absolute after:inset-x-0 after:-inset-y-1 after:z-0 after:rounded-md">
 
         
-        Prerequisites
+        Status Code Reference
         
 
         
@@ -354,7 +373,7 @@
         class="hover:bg-sidebar-accent hover:text-sidebar-accent-foreground peer/menu-button flex items-center gap-2 rounded-md p-2 text-left outline-hidden ring-sidebar-ring transition-[width,height,padding] focus-visible:ring-2 active:bg-sidebar-accent active:text-sidebar-accent-foreground disabled:pointer-events-none disabled:opacity-50 group-has-data-[sidebar=menu-action]/menu-item:pr-8 aria-disabled:pointer-events-none aria-disabled:opacity-50 data-[active=true]:font-medium data-[active=true]:text-sidebar-accent-foreground data-[state=open]:hover:bg-sidebar-accent data-[state=open]:hover:text-sidebar-accent-foreground group-data-[collapsible=icon]:size-8! group-data-[collapsible=icon]:p-2! [&>span:last-child]:truncate [&>svg]:size-4 [&>svg]:shrink-0 data-[active=true]:bg-accent data-[active=true]:border-accent 3xl:fixed:w-full 3xl:fixed:max-w-48 relative h-[30px] w-fit overflow-visible border border-transparent text-[0.8rem] font-medium after:absolute after:inset-x-0 after:-inset-y-1 after:z-0 after:rounded-md">
 
         
-        About
+        About this Guide
         
 
         
@@ -927,6 +946,35 @@
 <li><strong>Deployment:</strong> On-premise (loaded on individual FullyBooked POS machines)</li>
 </ul>
 <p><strong>Note:</strong> While this integration runs on a Spring Boot application deployed via Tomcat, most development work involves database/SQL-level modifications rather than application code changes.</p>
+<h2 id="database-configuration">Database Configuration</h2>
+<h3 id="database-schemas">Database Schemas</h3>
+<p>The FullyBooked integration utilizes multiple MS SQL Server databases:</p>
+<h4 id="serverposdb"><code>serverposdb</code></h4>
+<ul>
+<li><strong>Purpose:</strong> Primary POS application database</li>
+<li><strong>Usage:</strong> Main database where most SQL view editing and modifications occur</li>
+<li><strong>Role:</strong> Contains core POS data for transactions, items, and operations</li>
+<li><strong>Development Note:</strong> This is the primary database you'll work with when creating or modifying views for data exports</li>
+</ul>
+<h4 id="kwikpos_addin"><code>KwikPOS_AddIn</code></h4>
+<ul>
+<li><strong>Purpose:</strong> Spring Boot integration configuration database</li>
+<li><strong>Usage:</strong> Stores integration-specific settings and configurations</li>
+<li><strong>Key Contents:</strong><ul>
+<li>User configurations</li>
+<li>Cron job settings (e.g., boolean flags for enabling/disabling scheduled text file exports to IMS)</li>
+<li>FTP connection details (IP addresses, credentials)</li>
+<li>Database-centric approach configuration tables</li>
+<li><code>dbo.FB_IMSFILE_LKP</code> - Lookup table for IMS file exports<ul>
+<li>Contains rows identifying resources to export</li>
+<li>Maps view tables to query for each export type</li>
+<li>Defines export configurations and mappings</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Database-Centric Approach:</strong> This integration follows a database-centric design pattern where configuration and logic are stored in database tables rather than hardcoded in the application, allowing for flexible modifications without code changes.</p>
 <h2 id="key-features">Key Features</h2>
 <h3 id="data-export-system">Data Export System</h3>
 <p>The integration exports data from the POS database to text files for FullyBooked's systems to consume.</p>
@@ -1009,7 +1057,13 @@
                     
                     <a class="text-2xl font-medium" href="../../index.html">
                         
-                        Guide Overview
+                        Introduction
+                        
+                    </a>
+                    
+                    <a class="text-2xl font-medium" href="../../prerequisites.html">
+                        
+                        Prerequisites
                         
                     </a>
                     
@@ -1019,9 +1073,9 @@
                         
                     </a>
                     
-                    <a class="text-2xl font-medium" href="../../prerequisites.html">
+                    <a class="text-2xl font-medium" href="../../status-code-reference.html">
                         
-                        Prerequisites
+                        Status Code Reference
                         
                     </a>
                     
@@ -1033,7 +1087,7 @@
                     
                     <a class="text-2xl font-medium" href="../../about.html">
                         
-                        About
+                        About this Guide
                         
                     </a>
                     
@@ -1246,6 +1300,22 @@
             data-active="false" data-depth="2">
             Tech Stack
         </a>
+        
+
+        
+        <a href="#database-configuration"
+            class="text-muted-foreground hover:text-foreground data-[active=true]:text-foreground text-[0.8rem] no-underline transition-colors data-[depth=3]:pl-4 data-[depth=4]:pl-6"
+            data-active="false" data-depth="2">
+            Database Configuration
+        </a>
+        
+        
+        <a href="#database-schemas"
+            class="text-muted-foreground hover:text-foreground data-[active=true]:text-foreground text-[0.8rem] no-underline transition-colors data-[depth=3]:pl-4 data-[depth=4]:pl-6"
+            data-active="false" data-depth="3">
+            Database Schemas
+        </a>
+        
         
 
         

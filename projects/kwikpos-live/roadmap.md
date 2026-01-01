@@ -301,34 +301,34 @@ KwikPOS Live serves as the central cloud backend for our POS ecosystem. It aggre
 ### Q1 2026 (January - March)
 
 - **Cloud-Based Inventory Management** - Target: February 2026
-  - Database schema design and implementation
-  - Core inventory APIs development
-  - Basic inventory dashboard UI
-  - Integration with POS systems for inventory sync
+    - Database schema design and implementation
+    - Core inventory APIs development
+    - Basic inventory dashboard UI
+    - Integration with POS systems for inventory sync
 
 ### Q2 2026 (April - June)
 
 - **AI-Powered Sales Reports and Forecasting** - Timeline TBD
-  - Requirements finalization
-  - AI model selection and integration
-  - Report generation APIs
-  - Dashboard UI for AI insights
+    - Requirements finalization
+    - AI model selection and integration
+    - Report generation APIs
+    - Dashboard UI for AI insights
 
 ### Future (No Specific Timeline)
 
 - **Spring Boot and Java Version Upgrade** - Schedule TBD
-  - Dependency audit and upgrade planning
-  - Development and testing
-  - Phased deployment
+    - Dependency audit and upgrade planning
+    - Development and testing
+    - Phased deployment
 
 - **KwikPOS Pro Sync Integration** - Dependent on KwikPOS Pro team
-  - Primarily KwikPOS Pro team responsibility
-  - KwikPOS Live team provides endpoint support
+    - Primarily KwikPOS Pro team responsibility
+    - KwikPOS Live team provides endpoint support
 
 - **Inventory Syncing Integration** - Requirements pending
-  - Requirements gathering
-  - Technical design
-  - Implementation
+    - Requirements gathering
+    - Technical design
+    - Implementation
 
 ### Ongoing
 

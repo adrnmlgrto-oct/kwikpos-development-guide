@@ -46,9 +46,9 @@ Typical tasks in this project include:
 ### Adding New Export Data
 
 1. Understand the new data requirements from FullyBooked
-2. Identify the `KwikPOS_WebExt` schema and update the table with `lkp`
-3. Create the view table. Follow existing naming conventions based on existing view tables
-4. Update column with updated row to query the new SQL view in the `lkp` table
+2. Identify the `KwikPOS_AddIn` schema and update the table with `dbo.FB_IMSFILE_LKP`
+3. Create the view table in the `serverposdb` schema. Follow existing naming conventions based on existing view tables
+4. Update column with updated row to query the new SQL view in the `dbo.FB_IMSFILE_LKP` table
 5. Test export with real data
 
 ### Troubleshooting Import Issues

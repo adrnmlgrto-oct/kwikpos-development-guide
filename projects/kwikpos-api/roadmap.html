@@ -278,7 +278,26 @@
         class="hover:bg-sidebar-accent hover:text-sidebar-accent-foreground peer/menu-button flex items-center gap-2 rounded-md p-2 text-left outline-hidden ring-sidebar-ring transition-[width,height,padding] focus-visible:ring-2 active:bg-sidebar-accent active:text-sidebar-accent-foreground disabled:pointer-events-none disabled:opacity-50 group-has-data-[sidebar=menu-action]/menu-item:pr-8 aria-disabled:pointer-events-none aria-disabled:opacity-50 data-[active=true]:font-medium data-[active=true]:text-sidebar-accent-foreground data-[state=open]:hover:bg-sidebar-accent data-[state=open]:hover:text-sidebar-accent-foreground group-data-[collapsible=icon]:size-8! group-data-[collapsible=icon]:p-2! [&>span:last-child]:truncate [&>svg]:size-4 [&>svg]:shrink-0 data-[active=true]:bg-accent data-[active=true]:border-accent 3xl:fixed:w-full 3xl:fixed:max-w-48 relative h-[30px] w-fit overflow-visible border border-transparent text-[0.8rem] font-medium after:absolute after:inset-x-0 after:-inset-y-1 after:z-0 after:rounded-md">
 
         
-        Guide Overview
+        Introduction
+        
+
+        
+
+        
+
+        
+    </a>
+</li>
+                
+                
+                
+                <li data-slot="sidebar-menu-item" data-sidebar="menu-item" class="group/menu-item relative">
+    <a data-slot="sidebar-menu-button" data-active="false" data-sidebar="menu-button"
+        data-size="default" href="/kwikpos-development-guide/prerequisites.html"
+        class="hover:bg-sidebar-accent hover:text-sidebar-accent-foreground peer/menu-button flex items-center gap-2 rounded-md p-2 text-left outline-hidden ring-sidebar-ring transition-[width,height,padding] focus-visible:ring-2 active:bg-sidebar-accent active:text-sidebar-accent-foreground disabled:pointer-events-none disabled:opacity-50 group-has-data-[sidebar=menu-action]/menu-item:pr-8 aria-disabled:pointer-events-none aria-disabled:opacity-50 data-[active=true]:font-medium data-[active=true]:text-sidebar-accent-foreground data-[state=open]:hover:bg-sidebar-accent data-[state=open]:hover:text-sidebar-accent-foreground group-data-[collapsible=icon]:size-8! group-data-[collapsible=icon]:p-2! [&>span:last-child]:truncate [&>svg]:size-4 [&>svg]:shrink-0 data-[active=true]:bg-accent data-[active=true]:border-accent 3xl:fixed:w-full 3xl:fixed:max-w-48 relative h-[30px] w-fit overflow-visible border border-transparent text-[0.8rem] font-medium after:absolute after:inset-x-0 after:-inset-y-1 after:z-0 after:rounded-md">
+
+        
+        Prerequisites
         
 
         
@@ -312,11 +331,11 @@
                 
                 <li data-slot="sidebar-menu-item" data-sidebar="menu-item" class="group/menu-item relative">
     <a data-slot="sidebar-menu-button" data-active="false" data-sidebar="menu-button"
-        data-size="default" href="/kwikpos-development-guide/prerequisites.html"
+        data-size="default" href="/kwikpos-development-guide/status-code-reference.html"
         class="hover:bg-sidebar-accent hover:text-sidebar-accent-foreground peer/menu-button flex items-center gap-2 rounded-md p-2 text-left outline-hidden ring-sidebar-ring transition-[width,height,padding] focus-visible:ring-2 active:bg-sidebar-accent active:text-sidebar-accent-foreground disabled:pointer-events-none disabled:opacity-50 group-has-data-[sidebar=menu-action]/menu-item:pr-8 aria-disabled:pointer-events-none aria-disabled:opacity-50 data-[active=true]:font-medium data-[active=true]:text-sidebar-accent-foreground data-[state=open]:hover:bg-sidebar-accent data-[state=open]:hover:text-sidebar-accent-foreground group-data-[collapsible=icon]:size-8! group-data-[collapsible=icon]:p-2! [&>span:last-child]:truncate [&>svg]:size-4 [&>svg]:shrink-0 data-[active=true]:bg-accent data-[active=true]:border-accent 3xl:fixed:w-full 3xl:fixed:max-w-48 relative h-[30px] w-fit overflow-visible border border-transparent text-[0.8rem] font-medium after:absolute after:inset-x-0 after:-inset-y-1 after:z-0 after:rounded-md">
 
         
-        Prerequisites
+        Status Code Reference
         
 
         
@@ -354,7 +373,7 @@
         class="hover:bg-sidebar-accent hover:text-sidebar-accent-foreground peer/menu-button flex items-center gap-2 rounded-md p-2 text-left outline-hidden ring-sidebar-ring transition-[width,height,padding] focus-visible:ring-2 active:bg-sidebar-accent active:text-sidebar-accent-foreground disabled:pointer-events-none disabled:opacity-50 group-has-data-[sidebar=menu-action]/menu-item:pr-8 aria-disabled:pointer-events-none aria-disabled:opacity-50 data-[active=true]:font-medium data-[active=true]:text-sidebar-accent-foreground data-[state=open]:hover:bg-sidebar-accent data-[state=open]:hover:text-sidebar-accent-foreground group-data-[collapsible=icon]:size-8! group-data-[collapsible=icon]:p-2! [&>span:last-child]:truncate [&>svg]:size-4 [&>svg]:shrink-0 data-[active=true]:bg-accent data-[active=true]:border-accent 3xl:fixed:w-full 3xl:fixed:max-w-48 relative h-[30px] w-fit overflow-visible border border-transparent text-[0.8rem] font-medium after:absolute after:inset-x-0 after:-inset-y-1 after:z-0 after:rounded-md">
 
         
-        About
+        About this Guide
         
 
         
@@ -1060,10 +1079,10 @@ Items endpoint returns menu items without calorie information. The POS database 
 <li>Handle null/missing calorie values gracefully</li>
 </ul>
 <p><strong>Current Progress:</strong></p>
-<ul>
-<li>✅ Initial investigation started - identifying calorie column in POS database</li>
-<li>✅ Column mapping and SQL query updates already done</li>
-<li>⏳ Still needs: Testing, validation, and deployment</li>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Initial investigation started - identifying calorie column in POS database</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Column mapping and SQL query updates already done</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Still needs: Testing, validation, and deployment</li>
 </ul>
 <p><strong>Implementation Details:</strong></p>
 <ul>
@@ -1140,27 +1159,33 @@ Items endpoint returns menu items without calorie information. The POS database 
 <h2 id="timeline-prioritization">Timeline &amp; Prioritization</h2>
 <h3 id="q4-2025-q1-2026-immediate-priority">Q4 2025 / Q1 2026 (Immediate Priority)</h3>
 <ul>
-<li><strong>Calorie Count Implementation</strong> - MUST complete before Phase 1 deadline (Dec 20, 2025)</li>
+<li><strong>Calorie Count Implementation</strong> - MUST complete before Phase 1 deadline (Dec 20, 2025)<ul>
 <li>Complete database column mapping validation</li>
 <li>Finalize SQL query updates</li>
 <li>Testing and validation</li>
 <li>Deployment to individual client store branches with KwikPOS API</li>
 </ul>
+</li>
+</ul>
 <h3 id="2026-as-needed">2026 (As Needed)</h3>
 <ul>
-<li><strong>KwikPOS Terminal Support</strong> - Timeline TBD based on product launch schedule</li>
+<li><strong>KwikPOS Terminal Support</strong> - Timeline TBD based on product launch schedule<ul>
 <li>Requirements gathering and technical design</li>
 <li>Implementation of table management features</li>
 <li>Waiter authentication and order assignment</li>
 <li>Testing with actual terminal devices</li>
 </ul>
+</li>
+</ul>
 <h3 id="future-no-specific-timeline">Future (No Specific Timeline)</h3>
 <ul>
-<li><strong>Multi-POS Provider Support</strong> - Will be triggered by sales team requirements</li>
+<li><strong>Multi-POS Provider Support</strong> - Will be triggered by sales team requirements<ul>
 <li>Determine which POS systems to support based on client demand</li>
 <li>Design abstraction layer for multi-POS compatibility</li>
 <li>Implement adapters for priority POS systems</li>
 <li>Testing and validation with each POS provider</li>
+</ul>
+</li>
 </ul>
 <h3 id="ongoing">Ongoing</h3>
 <ul>
@@ -1218,7 +1243,13 @@ Items endpoint returns menu items without calorie information. The POS database 
                     
                     <a class="text-2xl font-medium" href="../../index.html">
                         
-                        Guide Overview
+                        Introduction
+                        
+                    </a>
+                    
+                    <a class="text-2xl font-medium" href="../../prerequisites.html">
+                        
+                        Prerequisites
                         
                     </a>
                     
@@ -1228,9 +1259,9 @@ Items endpoint returns menu items without calorie information. The POS database 
                         
                     </a>
                     
-                    <a class="text-2xl font-medium" href="../../prerequisites.html">
+                    <a class="text-2xl font-medium" href="../../status-code-reference.html">
                         
-                        Prerequisites
+                        Status Code Reference
                         
                     </a>
                     
@@ -1242,7 +1273,7 @@ Items endpoint returns menu items without calorie information. The POS database 
                     
                     <a class="text-2xl font-medium" href="../../about.html">
                         
-                        About
+                        About this Guide
                         
                     </a>
                     

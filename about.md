@@ -2,11 +2,9 @@
 
 This developer guide was created to help onboard new developers to the KwikPOS ecosystem and provide comprehensive documentation for our projects.
 
-## Documentation Author
+## Contact
 
-**Adrian Melegrito**<br />
-Software Developer<br />
-[adrnmlgrto.dev@gmail.com](mailto:adrnmlgrto.dev@gmail.com)
+For any questions or clarifications about this guide, feel free to reach out at [adrnmlgrto.dev@gmail.com](mailto:adrnmlgrto.dev@gmail.com).
 
 ## Acknowledgments
 
