@@ -27,24 +27,27 @@ This document covers known limitations and guidance for getting help with the Fu
 ### SQL/Database Questions
 
 **What to do:**
+
 - Review existing views and queries in the database
 - Check SQL Server query execution plans for performance issues
 - Examine database schema for available tables and columns
 - Review database logs for errors
 
 **Tools:**
-- SQL Server Management Studio (SSMS)
-- Azure Data Studio
+
+- SQL Server Management Studio 19 (SSMS 19)
 - Database documentation (if available)
 
 ### Data Format Issues
 
 **What to do:**
+
 - Check with FullyBooked's technical team for format specifications
 - Review sample files to understand expected format
 - Validate file structure (delimiters, headers, data types)
 
 **Common Issues:**
+
 - Tab-delimited format mismatches
 - Missing or extra columns
 - Data type incompatibilities
@@ -53,12 +56,14 @@ This document covers known limitations and guidance for getting help with the Fu
 ### Export/Import Problems
 
 **What to do:**
+
 - Review logs and validate file formats
 - Check file permissions and access
 - Verify file paths and transfer mechanisms
 - Test with sample data before production
 
 **Common Issues:**
+
 - File permission errors
 - Path/location mismatches
 - File format validation failures
@@ -67,6 +72,7 @@ This document covers known limitations and guidance for getting help with the Fu
 ### New Requirements
 
 **What to do:**
+
 - Coordinate with the development team or directly with the contact person in FullyBooked GCs
 - Get clear specifications before making changes
 - Document new requirements and implementation approach
@@ -77,11 +83,13 @@ This document covers known limitations and guidance for getting help with the Fu
 ### Export View Not Returning Expected Data
 
 **Symptoms:**
+
 - Missing rows in export
 - Incorrect data values
 - NULL values where data should exist
 
 **Solutions:**
+
 1. Review the SQL view definition
 2. Check JOIN conditions and WHERE clauses
 3. Verify source tables have the expected data
@@ -91,11 +99,13 @@ This document covers known limitations and guidance for getting help with the Fu
 ### Import Failing with Validation Errors
 
 **Symptoms:**
+
 - Import process fails
 - Data type mismatch errors
 - Constraint violation errors
 
 **Solutions:**
+
 1. Review import error logs
 2. Validate text file format matches specifications
 3. Check for data type mismatches
@@ -105,11 +115,13 @@ This document covers known limitations and guidance for getting help with the Fu
 ### Performance Issues with Views
 
 **Symptoms:**
+
 - Slow query execution
 - Timeouts during export
 - High database CPU/memory usage
 
 **Solutions:**
+
 1. Review query execution plan
 2. Add appropriate indexes
 3. Optimize JOIN operations

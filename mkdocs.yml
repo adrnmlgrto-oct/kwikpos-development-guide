@@ -42,6 +42,8 @@ nav:
   - FullyBooked (WebExt):
       - Overview: projects/kwikpos-fullybooked/index.md
       - Responsibilities: projects/kwikpos-fullybooked/responsibilities.md
+      - WebExt Installation: projects/kwikpos-fullybooked/webext-installation.md
       - Deployment: projects/kwikpos-fullybooked/deployment.md
       - Development Tasks: projects/kwikpos-fullybooked/development.md
+      - Tender Requirements Map: projects/kwikpos-fullybooked/tender-requirements.md
       - Troubleshooting: projects/kwikpos-fullybooked/troubleshooting.md
