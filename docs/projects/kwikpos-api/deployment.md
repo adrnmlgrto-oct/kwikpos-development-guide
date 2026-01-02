@@ -15,6 +15,9 @@
 - **Network:** Local LAN communication (`0.0.0.0`)
 - **Availability:** Must be running whenever kiosks are operational
 
+!!! info "Note:"
+    You can view this <a href="https://drive.google.com/drive/folders/1BWgdN1cBq6IBEZnQMbHeHD2iF9pGLdk0?usp=drive_link" target="_blank">folder</a> for reference with the deployment implementation
+
 ## Configuration
 
 - POS machine-specific settings
