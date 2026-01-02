@@ -14,6 +14,7 @@ nav:
   - Introduction: index.md
   - Prerequisites: prerequisites.md
   - Getting Started: getting-started.md
+  - Project Files: project-files.md
   - Status Code Reference: status-code-reference.md
   - AI Usage Guidelines: ai-usage-guidelines.md
   - About this Guide: about.md

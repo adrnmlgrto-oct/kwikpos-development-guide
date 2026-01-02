@@ -31,6 +31,9 @@ mvn verify
 - Test concurrent order handling
 - Check system performance under load
 
+!!! note "Note:"
+    We have several POS testing units at the office. Use these for integration tests.
+
 ## Testing Checklist
 
 When testing new features or changes:
