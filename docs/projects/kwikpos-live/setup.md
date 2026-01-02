@@ -19,9 +19,20 @@ git clone https://github.com/oct-ph/kwikpos-live-legacy-backend.git
 cd kwikpos-live-legacy-backend
 ```
 
-### 2. Request for the Dumped Data for Local Testing then Import via MySQL Workbench 8.0
+### 2. Request for the Application Properties File
 
-### 3. Update Configuration
+The project utilizes an `application.properties` file which holds all of the necessary project configurations. The spring boot application will not run without this.
+
+We additionally excluded this from source control as it doesn't use profiles unlike the project for KwikPOS API.
+
+### 3. Request for the Dumped Data for Local Testing then Import via MySQL Workbench 8.0
+
+This step would be crucial in order to setup your own database to use for local development and testing.
+
+!!! warning "Warning:"
+    Avoid testing in production environment.
+
+### 4. Update Configuration
 
 Edit the `application.properties` file and configure database connection:
 
@@ -31,20 +42,23 @@ spring.datasource.username=your_username
 spring.datasource.password=your_password
 ```
 
-### 4. Build the Project
+!!! warning "Warning:"
+    Do **not** commit and push the `application.properties` in source control for this project as it contains sensitive keys and etc. unlike the KwikPOS API project which uses profile-specific properties files.
+
+### 5. Build the Project
 
 ```bash
 mvn clean install
 ```
 
-### 5. Run Locally
+### 6. Run Locally
 
 ```bash
 # Using Spring Boot
 mvn spring-boot:run
 ```
 
-### 6. Verify Installation
+### 7. Verify Installation
 
 - Access via
     - http://localhost:8082
