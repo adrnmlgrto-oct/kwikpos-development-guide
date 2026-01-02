@@ -9,6 +9,10 @@ Before diving into development, make sure you have the necessary knowledge and t
 - **Review [Prerequisites](prerequisites.md)** - Essential knowledge (Git, Java, Spring Boot, etc.) and required development tools
 - Verify you have the appropriate JDK version for your project
 - Ensure your development environment is set up correctly
+- Retrieve required credentials and API keys from the <a href="https://drive.google.com/drive/folders/1OGIoDuHcQaaSlJLzGHUhopz9NKWrzdlA?usp=drive_link" target="_blank">project credentials folder</a>
+
+!!! info "Note:"
+    The text files containing the credentials in the link above is in a password-protected archive (.zip) file. Ask the development team for the password.
 
 ## Project Ecosystem
 
@@ -159,7 +163,7 @@ You'll be creating, optimizing, and maintaining SQL queries including:
 4. **Familiarize with Database Systems**
 
     - Set up local MySQL database for KwikPOS Live development
-    - Install SQL Server Management Studio or Azure Data Studio
+    - Install SQL Server Management Studio 19
     - Get familiar with SQLite (DB Browser for SQLite)
     - Set up PostgreSQL client for Supabase integration
     - Review existing database schemas and query patterns

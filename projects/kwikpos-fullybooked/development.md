@@ -38,10 +38,31 @@ Typical tasks in this project include:
 
 1. Identify the view that needs modification
 2. Review current view definition and data output
-3. Make necessary SQL changes to the view
-4. Test the modified view with sample data
-5. Verify export file format matches FullyBooked's requirements
-6. Deploy the updated view
+3. Extract the SELECT statement from the view and make necessary modifications
+4. Update the corresponding `CREATE OR ALTER VIEW` statement in the SQL script file
+5. Test the modified view with sample data
+6. Verify export file format matches FullyBooked's requirements
+7. Deploy the updated view to production
+
+#### SQL Script File for View Updates
+
+<a href="https://drive.google.com/drive/folders/1KL1gK-nbfojwu14b-u5MElpcSzcoFmAB?usp=sharing" target="_blank">FullyBooked View Updates Script →</a>
+
+This SQL script file contains the complete deployment script for view updates, including the `USE [sevrerposdb]; GO` statement and full `CREATE OR ALTER VIEW` definitions. The file currently includes three export views:
+
+- `dbo.View_tblSaleTenderRequirement`
+- `dbo.View_tblSaleTransaction`
+- `dbo.View_tblSaleTransactionDetailed`
+
+**Development Workflow:**
+
+1. Extract the SELECT portion from the target view
+2. Make your modifications to the SELECT statement as needed
+3. Update the full `CREATE OR ALTER VIEW` statement in this script file
+4. Provide the updated script file to helpdesk support for deployment
+
+!!! note "Adding Updates for Other Views:"
+    This script only includes the three views listed above. If another export view table needs to be updated, add a new `CREATE OR ALTER VIEW` statement to this file below the existing views. This ensures helpdesk support can deploy all view updates using a single consolidated script file.
 
 ### Adding New Export Data
 

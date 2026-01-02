@@ -29,7 +29,7 @@ To work on this integration, you'll need:
 - Database access credentials for the FullyBooked POS database
 - Understanding of FullyBooked's data format specifications
 - SQL query writing and optimization skills
-- Database client tool (SQL Server Management Studio or Azure Data Studio)
+- Database client tool (SQL Server Management Studio 19)
 
 ## Architecture Context
 

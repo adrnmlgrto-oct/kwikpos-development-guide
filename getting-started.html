@@ -803,6 +803,23 @@
                 
                 <li data-slot="sidebar-menu-item" data-sidebar="menu-item" class="group/menu-item relative">
     <a data-slot="sidebar-menu-button" data-active="false" data-sidebar="menu-button"
+        data-size="default" href="/kwikpos-development-guide/projects/kwikpos-fullybooked/webext-installation.html"
+        class="hover:bg-sidebar-accent hover:text-sidebar-accent-foreground peer/menu-button flex items-center gap-2 rounded-md p-2 text-left outline-hidden ring-sidebar-ring transition-[width,height,padding] focus-visible:ring-2 active:bg-sidebar-accent active:text-sidebar-accent-foreground disabled:pointer-events-none disabled:opacity-50 group-has-data-[sidebar=menu-action]/menu-item:pr-8 aria-disabled:pointer-events-none aria-disabled:opacity-50 data-[active=true]:font-medium data-[active=true]:text-sidebar-accent-foreground data-[state=open]:hover:bg-sidebar-accent data-[state=open]:hover:text-sidebar-accent-foreground group-data-[collapsible=icon]:size-8! group-data-[collapsible=icon]:p-2! [&>span:last-child]:truncate [&>svg]:size-4 [&>svg]:shrink-0 data-[active=true]:bg-accent data-[active=true]:border-accent 3xl:fixed:w-full 3xl:fixed:max-w-48 relative h-[30px] w-fit overflow-visible border border-transparent text-[0.8rem] font-medium after:absolute after:inset-x-0 after:-inset-y-1 after:z-0 after:rounded-md">
+
+        
+        WebExt Installation
+        
+
+        
+
+        
+
+        
+    </a>
+</li>
+                
+                <li data-slot="sidebar-menu-item" data-sidebar="menu-item" class="group/menu-item relative">
+    <a data-slot="sidebar-menu-button" data-active="false" data-sidebar="menu-button"
         data-size="default" href="/kwikpos-development-guide/projects/kwikpos-fullybooked/deployment.html"
         class="hover:bg-sidebar-accent hover:text-sidebar-accent-foreground peer/menu-button flex items-center gap-2 rounded-md p-2 text-left outline-hidden ring-sidebar-ring transition-[width,height,padding] focus-visible:ring-2 active:bg-sidebar-accent active:text-sidebar-accent-foreground disabled:pointer-events-none disabled:opacity-50 group-has-data-[sidebar=menu-action]/menu-item:pr-8 aria-disabled:pointer-events-none aria-disabled:opacity-50 data-[active=true]:font-medium data-[active=true]:text-sidebar-accent-foreground data-[state=open]:hover:bg-sidebar-accent data-[state=open]:hover:text-sidebar-accent-foreground group-data-[collapsible=icon]:size-8! group-data-[collapsible=icon]:p-2! [&>span:last-child]:truncate [&>svg]:size-4 [&>svg]:shrink-0 data-[active=true]:bg-accent data-[active=true]:border-accent 3xl:fixed:w-full 3xl:fixed:max-w-48 relative h-[30px] w-fit overflow-visible border border-transparent text-[0.8rem] font-medium after:absolute after:inset-x-0 after:-inset-y-1 after:z-0 after:rounded-md">
 
@@ -825,6 +842,23 @@
 
         
         Development Tasks
+        
+
+        
+
+        
+
+        
+    </a>
+</li>
+                
+                <li data-slot="sidebar-menu-item" data-sidebar="menu-item" class="group/menu-item relative">
+    <a data-slot="sidebar-menu-button" data-active="false" data-sidebar="menu-button"
+        data-size="default" href="/kwikpos-development-guide/projects/kwikpos-fullybooked/tender-requirements.html"
+        class="hover:bg-sidebar-accent hover:text-sidebar-accent-foreground peer/menu-button flex items-center gap-2 rounded-md p-2 text-left outline-hidden ring-sidebar-ring transition-[width,height,padding] focus-visible:ring-2 active:bg-sidebar-accent active:text-sidebar-accent-foreground disabled:pointer-events-none disabled:opacity-50 group-has-data-[sidebar=menu-action]/menu-item:pr-8 aria-disabled:pointer-events-none aria-disabled:opacity-50 data-[active=true]:font-medium data-[active=true]:text-sidebar-accent-foreground data-[state=open]:hover:bg-sidebar-accent data-[state=open]:hover:text-sidebar-accent-foreground group-data-[collapsible=icon]:size-8! group-data-[collapsible=icon]:p-2! [&>span:last-child]:truncate [&>svg]:size-4 [&>svg]:shrink-0 data-[active=true]:bg-accent data-[active=true]:border-accent 3xl:fixed:w-full 3xl:fixed:max-w-48 relative h-[30px] w-fit overflow-visible border border-transparent text-[0.8rem] font-medium after:absolute after:inset-x-0 after:-inset-y-1 after:z-0 after:rounded-md">
+
+        
+        Tender Requirements Map
         
 
         
@@ -955,7 +989,12 @@
 <li><strong>Review <a href="prerequisites.html">Prerequisites</a></strong> - Essential knowledge (Git, Java, Spring Boot, etc.) and required development tools</li>
 <li>Verify you have the appropriate JDK version for your project</li>
 <li>Ensure your development environment is set up correctly</li>
+<li>Retrieve required credentials and API keys from the <a href="https://drive.google.com/drive/folders/1OGIoDuHcQaaSlJLzGHUhopz9NKWrzdlA?usp=drive_link" target="_blank">project credentials folder</a></li>
 </ul>
+<div class="admonition info">
+<p class="admonition-title">Note:</p>
+<p>The text files containing the credentials in the link above is in a password-protected archive (.zip) file. Ask the development team for the password.</p>
+</div>
 <h2 id="project-ecosystem">Project Ecosystem</h2>
 <p>Our ecosystem consists of cloud-based backend services and on-premise API adapters that work together to provide a complete POS solution. Real-time data syncing enables individual POS applications to communicate with our cloud backend server, consolidating sales records from different client stores and branches.</p>
 <h2 id="our-projects">Our Projects</h2>
@@ -1174,7 +1213,7 @@
 <p><strong>Familiarize with Database Systems</strong></p>
 <ul>
 <li>Set up local MySQL database for KwikPOS Live development</li>
-<li>Install SQL Server Management Studio or Azure Data Studio</li>
+<li>Install SQL Server Management Studio 19</li>
 <li>Get familiar with SQLite (DB Browser for SQLite)</li>
 <li>Set up PostgreSQL client for Supabase integration</li>
 <li>Review existing database schemas and query patterns</li>
@@ -1487,6 +1526,12 @@
                             
                         </a>
                         
+                        <a class="text-2xl font-medium" href="projects/kwikpos-fullybooked/webext-installation.html">
+                            
+                            WebExt Installation
+                            
+                        </a>
+                        
                         <a class="text-2xl font-medium" href="projects/kwikpos-fullybooked/deployment.html">
                             
                             Deployment
@@ -1496,6 +1541,12 @@
                         <a class="text-2xl font-medium" href="projects/kwikpos-fullybooked/development.html">
                             
                             Development Tasks
+                            
+                        </a>
+                        
+                        <a class="text-2xl font-medium" href="projects/kwikpos-fullybooked/tender-requirements.html">
+                            
+                            Tender Requirements Map
                             
                         </a>
                         
