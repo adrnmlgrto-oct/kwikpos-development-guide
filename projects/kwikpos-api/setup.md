@@ -48,6 +48,9 @@ mvn spring-boot:run
 cp target/kwikpos-legacy-adapter.war /path/to/tomcat10/webapps/
 ```
 
+!!! note "Note:"
+    When running the embedded tomcat server for local development, this project is special as it has this funcationality of **hot-reload** whenever code gets saved.
+
 ### 5. Verify Installation
 
 - Access via:

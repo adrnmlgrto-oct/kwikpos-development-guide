@@ -231,6 +231,7 @@ Once you've verified all prerequisites, proceed to:
 1. [Getting Started](getting-started.md) - Overview of the KwikPOS ecosystem
 2. [KwikPOS Live](projects/kwikpos-live/index.md) - Backend project documentation
 3. [KwikPOS API](projects/kwikpos-api/index.md) - Kiosk adapter project documentation
+4. [FullyBooked (WebExt)](projects/kwikpos-fullybooked/index.md) - Integration of KwikPOS & FullyBooked project documentation
 
 ## Getting Help
 

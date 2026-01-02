@@ -2,122 +2,126 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://adrnmlgrto-oct.github.io/kwikpos-development-guide/index.html</loc>
-         <lastmod>2026-01-01</lastmod>
+         <lastmod>2026-01-02</lastmod>
     </url>
     <url>
          <loc>https://adrnmlgrto-oct.github.io/kwikpos-development-guide/about.html</loc>
-         <lastmod>2026-01-01</lastmod>
+         <lastmod>2026-01-02</lastmod>
     </url>
     <url>
          <loc>https://adrnmlgrto-oct.github.io/kwikpos-development-guide/ai-usage-guidelines.html</loc>
-         <lastmod>2026-01-01</lastmod>
+         <lastmod>2026-01-02</lastmod>
     </url>
     <url>
          <loc>https://adrnmlgrto-oct.github.io/kwikpos-development-guide/getting-started.html</loc>
-         <lastmod>2026-01-01</lastmod>
+         <lastmod>2026-01-02</lastmod>
     </url>
     <url>
          <loc>https://adrnmlgrto-oct.github.io/kwikpos-development-guide/prerequisites.html</loc>
-         <lastmod>2026-01-01</lastmod>
+         <lastmod>2026-01-02</lastmod>
+    </url>
+    <url>
+         <loc>https://adrnmlgrto-oct.github.io/kwikpos-development-guide/project-files.html</loc>
+         <lastmod>2026-01-02</lastmod>
     </url>
     <url>
          <loc>https://adrnmlgrto-oct.github.io/kwikpos-development-guide/status-code-reference.html</loc>
-         <lastmod>2026-01-01</lastmod>
+         <lastmod>2026-01-02</lastmod>
     </url>
     <url>
          <loc>https://adrnmlgrto-oct.github.io/kwikpos-development-guide/projects/kwikpos-api/index.html</loc>
-         <lastmod>2026-01-01</lastmod>
+         <lastmod>2026-01-02</lastmod>
     </url>
     <url>
          <loc>https://adrnmlgrto-oct.github.io/kwikpos-development-guide/projects/kwikpos-api/architecture.html</loc>
-         <lastmod>2026-01-01</lastmod>
+         <lastmod>2026-01-02</lastmod>
     </url>
     <url>
          <loc>https://adrnmlgrto-oct.github.io/kwikpos-development-guide/projects/kwikpos-api/deployment.html</loc>
-         <lastmod>2026-01-01</lastmod>
+         <lastmod>2026-01-02</lastmod>
     </url>
     <url>
          <loc>https://adrnmlgrto-oct.github.io/kwikpos-development-guide/projects/kwikpos-api/development.html</loc>
-         <lastmod>2026-01-01</lastmod>
+         <lastmod>2026-01-02</lastmod>
     </url>
     <url>
          <loc>https://adrnmlgrto-oct.github.io/kwikpos-development-guide/projects/kwikpos-api/responsibilities.html</loc>
-         <lastmod>2026-01-01</lastmod>
+         <lastmod>2026-01-02</lastmod>
     </url>
     <url>
          <loc>https://adrnmlgrto-oct.github.io/kwikpos-development-guide/projects/kwikpos-api/roadmap.html</loc>
-         <lastmod>2026-01-01</lastmod>
+         <lastmod>2026-01-02</lastmod>
     </url>
     <url>
          <loc>https://adrnmlgrto-oct.github.io/kwikpos-development-guide/projects/kwikpos-api/setup.html</loc>
-         <lastmod>2026-01-01</lastmod>
+         <lastmod>2026-01-02</lastmod>
     </url>
     <url>
          <loc>https://adrnmlgrto-oct.github.io/kwikpos-development-guide/projects/kwikpos-api/structure.html</loc>
-         <lastmod>2026-01-01</lastmod>
+         <lastmod>2026-01-02</lastmod>
     </url>
     <url>
          <loc>https://adrnmlgrto-oct.github.io/kwikpos-development-guide/projects/kwikpos-api/testing.html</loc>
-         <lastmod>2026-01-01</lastmod>
+         <lastmod>2026-01-02</lastmod>
     </url>
     <url>
          <loc>https://adrnmlgrto-oct.github.io/kwikpos-development-guide/projects/kwikpos-api/troubleshooting.html</loc>
-         <lastmod>2026-01-01</lastmod>
+         <lastmod>2026-01-02</lastmod>
     </url>
     <url>
          <loc>https://adrnmlgrto-oct.github.io/kwikpos-development-guide/projects/kwikpos-fullybooked/index.html</loc>
-         <lastmod>2026-01-01</lastmod>
+         <lastmod>2026-01-02</lastmod>
     </url>
     <url>
          <loc>https://adrnmlgrto-oct.github.io/kwikpos-development-guide/projects/kwikpos-fullybooked/deployment.html</loc>
-         <lastmod>2026-01-01</lastmod>
+         <lastmod>2026-01-02</lastmod>
     </url>
     <url>
          <loc>https://adrnmlgrto-oct.github.io/kwikpos-development-guide/projects/kwikpos-fullybooked/development.html</loc>
-         <lastmod>2026-01-01</lastmod>
+         <lastmod>2026-01-02</lastmod>
     </url>
     <url>
          <loc>https://adrnmlgrto-oct.github.io/kwikpos-development-guide/projects/kwikpos-fullybooked/responsibilities.html</loc>
-         <lastmod>2026-01-01</lastmod>
+         <lastmod>2026-01-02</lastmod>
     </url>
     <url>
          <loc>https://adrnmlgrto-oct.github.io/kwikpos-development-guide/projects/kwikpos-fullybooked/troubleshooting.html</loc>
-         <lastmod>2026-01-01</lastmod>
+         <lastmod>2026-01-02</lastmod>
     </url>
     <url>
          <loc>https://adrnmlgrto-oct.github.io/kwikpos-development-guide/projects/kwikpos-live/index.html</loc>
-         <lastmod>2026-01-01</lastmod>
+         <lastmod>2026-01-02</lastmod>
     </url>
     <url>
          <loc>https://adrnmlgrto-oct.github.io/kwikpos-development-guide/projects/kwikpos-live/deployment.html</loc>
-         <lastmod>2026-01-01</lastmod>
+         <lastmod>2026-01-02</lastmod>
     </url>
     <url>
          <loc>https://adrnmlgrto-oct.github.io/kwikpos-development-guide/projects/kwikpos-live/development.html</loc>
-         <lastmod>2026-01-01</lastmod>
+         <lastmod>2026-01-02</lastmod>
     </url>
     <url>
          <loc>https://adrnmlgrto-oct.github.io/kwikpos-development-guide/projects/kwikpos-live/responsibilities.html</loc>
-         <lastmod>2026-01-01</lastmod>
+         <lastmod>2026-01-02</lastmod>
     </url>
     <url>
          <loc>https://adrnmlgrto-oct.github.io/kwikpos-development-guide/projects/kwikpos-live/roadmap.html</loc>
-         <lastmod>2026-01-01</lastmod>
+         <lastmod>2026-01-02</lastmod>
     </url>
     <url>
          <loc>https://adrnmlgrto-oct.github.io/kwikpos-development-guide/projects/kwikpos-live/setup.html</loc>
-         <lastmod>2026-01-01</lastmod>
+         <lastmod>2026-01-02</lastmod>
     </url>
     <url>
          <loc>https://adrnmlgrto-oct.github.io/kwikpos-development-guide/projects/kwikpos-live/structure.html</loc>
-         <lastmod>2026-01-01</lastmod>
+         <lastmod>2026-01-02</lastmod>
     </url>
     <url>
          <loc>https://adrnmlgrto-oct.github.io/kwikpos-development-guide/projects/kwikpos-live/testing.html</loc>
-         <lastmod>2026-01-01</lastmod>
+         <lastmod>2026-01-02</lastmod>
     </url>
     <url>
          <loc>https://adrnmlgrto-oct.github.io/kwikpos-development-guide/projects/kwikpos-live/troubleshooting.html</loc>
-         <lastmod>2026-01-01</lastmod>
+         <lastmod>2026-01-02</lastmod>
     </url>
 </urlset>

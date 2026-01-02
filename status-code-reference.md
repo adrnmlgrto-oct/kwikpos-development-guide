@@ -96,6 +96,7 @@ When building features that work across both Chase POS and KwikPOS Pro:
 
 - [KwikPOS Live Overview](projects/kwikpos-live/index.md) - Backend system documentation
 - [KwikPOS API Overview](projects/kwikpos-api/index.md) - Kiosk adapter documentation
+- [FullyBooked (WebExt)](projects/kwikpos-fullybooked/index.md) - Integration of KwikPOS & FullyBooked documentation
 
 ---
 

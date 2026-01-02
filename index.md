@@ -15,6 +15,7 @@ We currently have two versions of POS applications that should be known by a Kwi
 1. **Chase POS (Legacy)**
 
     - This is the POS application that is provided by Chase Tech.
+    - This can either be of the two versions: *FoodPOS* or *WinPOS (Retail)*.
     - The source code cannot be modified on our end, and we could only do modifications that are applicable outside of the POS. (*e.g. Exporting of sales data for reports*)
     - We normally request modifications through the Chase developer if we really need it, but if we can do it on our end, we should push that instead.
 
@@ -27,7 +28,7 @@ We currently have two versions of POS applications that should be known by a Kwi
 
 Want to see what we're building? Visit our website to explore the KwikPOS product line:
 
-<a href="https://www.kwikpos.ph" target="_blank">Visit KwikPOS Website</a>
+<a href="https://www.kwikpos.ph" target="_blank">Visit KwikPOS Website →</a>
 
 ## Get Started
 

@@ -209,6 +209,7 @@ If you need assistance:
 - [Prerequisites Guide](prerequisites.md) - Required knowledge and tools
 - [KwikPOS Live Documentation](projects/kwikpos-live/index.md) - Detailed project guide
 - [KwikPOS API Documentation](projects/kwikpos-api/index.md) - Detailed project guide
+- [FullyBooked (WebExt)](projects/kwikpos-fullybooked/index.md) - Detailed project guide
 - [KwikPOS Website](https://www.kwikpos.ph) - Product information
 
 ---
