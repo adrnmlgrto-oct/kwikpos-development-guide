@@ -948,37 +948,48 @@
     </div>
   </div>
   <div class="typography w-full flex-1 *:data-[slot=alert]:first:mt-0">
-    <pre><code>kwikpos-live/
+    <pre><code>kwikpos-live-legacy-backend/
 ├── src/
 │   ├── main/
 │   │   ├── java/
-│   │   │   └── com/kwikpos/live/
-│   │   │       ├── controller/    # REST controllers
-│   │   │       ├── service/       # Business logic
-│   │   │       ├── mapper/        # Mapper interface methods
-│   │   │       ├── model/         # Entity models and constants
-│   │   │       ├── dto/           # Data transfer objects
-│   │   │       └── config/        # Configuration classes
+│   │   │   └── com/oneclicktech/spring/
+│   │   │       ├── component/          # Component classes
+│   │   │       ├── config/             # Configuration classes
+│   │   │       ├── controller/         # REST controllers
+│   │   │       ├── dto/                # Data transfer objects
+│   │   │       ├── enums/              # Enum objects
+│   │   │       ├── login/              # Authentication &amp; security classes
+│   │   │       ├── mapper/             # Mapper interface methods
+│   │   │       ├── model/              # Entity models and constants
+│   │   │       └── service/            # Business logic
+│   │   │
 │   │   └── resources/
 │   │       ├── application.properties
-│   │       └── static/            # Static resources
-│   └── test/                      # Unit and integration tests
-├── pom.xml                        # Maven configuration
+│   │       └── email_templates/        # Templates for email services
+│   │
+│   └── test/                           # Unit and integration tests
+├── pom.xml                             # Maven configuration
 └── README.md
 </code></pre>
 <h2 id="package-overview">Package Overview</h2>
+<h3 id="component">component/</h3>
+<p>Component classes for cross-cutting concerns and utilities that can be injected and reused across the application.</p>
+<h3 id="config">config/</h3>
+<p>Configuration classes for Spring Boot, security, database connections, and other application settings.</p>
 <h3 id="controller">controller/</h3>
 <p>REST controllers that handle HTTP requests and responses. Each controller typically corresponds to a specific domain or feature area.</p>
-<h3 id="service">service/</h3>
-<p>Business logic layer that implements the core functionality. Services are called by controllers and interact with repositories.</p>
+<h3 id="dto">dto/</h3>
+<p>Data Transfer Objects used for API requests and responses, separating internal models from external representations.</p>
+<h3 id="enums">enums/</h3>
+<p>Enum objects that define fixed sets of constants used throughout the application for type-safe value representation.</p>
+<h3 id="login">login/</h3>
+<p>Authentication and security classes that handle user login, session management, and security-related functionality.</p>
 <h3 id="mapper">mapper/</h3>
 <p>MyBatis mapper interfaces that define SQL query methods for database operations.</p>
 <h3 id="model">model/</h3>
 <p>Entity models representing database tables and constant values used throughout the application.</p>
-<h3 id="dto">dto/</h3>
-<p>Data Transfer Objects used for API requests and responses, separating internal models from external representations.</p>
-<h3 id="config">config/</h3>
-<p>Configuration classes for Spring Boot, security, database connections, and other application settings.</p>
+<h3 id="service">service/</h3>
+<p>Business logic layer that implements the core functionality. Services are called by controllers and interact with mappers.</p>
   </div>
 </article>
                                 <div class="mx-auto flex flex-wrap h-16 w-full max-w-2xl items-center gap-2 px-4 md:px-0">
@@ -1265,6 +1276,22 @@
         
         
         
+        <a href="#component"
+            class="text-muted-foreground hover:text-foreground data-[active=true]:text-foreground text-[0.8rem] no-underline transition-colors data-[depth=3]:pl-4 data-[depth=4]:pl-6"
+            data-active="false" data-depth="2">
+            component/
+        </a>
+        
+
+        
+        <a href="#config"
+            class="text-muted-foreground hover:text-foreground data-[active=true]:text-foreground text-[0.8rem] no-underline transition-colors data-[depth=3]:pl-4 data-[depth=4]:pl-6"
+            data-active="false" data-depth="2">
+            config/
+        </a>
+        
+
+        
         <a href="#controller"
             class="text-muted-foreground hover:text-foreground data-[active=true]:text-foreground text-[0.8rem] no-underline transition-colors data-[depth=3]:pl-4 data-[depth=4]:pl-6"
             data-active="false" data-depth="2">
@@ -1273,10 +1300,26 @@
         
 
         
-        <a href="#service"
+        <a href="#dto"
             class="text-muted-foreground hover:text-foreground data-[active=true]:text-foreground text-[0.8rem] no-underline transition-colors data-[depth=3]:pl-4 data-[depth=4]:pl-6"
             data-active="false" data-depth="2">
-            service/
+            dto/
+        </a>
+        
+
+        
+        <a href="#enums"
+            class="text-muted-foreground hover:text-foreground data-[active=true]:text-foreground text-[0.8rem] no-underline transition-colors data-[depth=3]:pl-4 data-[depth=4]:pl-6"
+            data-active="false" data-depth="2">
+            enums/
+        </a>
+        
+
+        
+        <a href="#login"
+            class="text-muted-foreground hover:text-foreground data-[active=true]:text-foreground text-[0.8rem] no-underline transition-colors data-[depth=3]:pl-4 data-[depth=4]:pl-6"
+            data-active="false" data-depth="2">
+            login/
         </a>
         
 
@@ -1297,18 +1340,10 @@
         
 
         
-        <a href="#dto"
+        <a href="#service"
             class="text-muted-foreground hover:text-foreground data-[active=true]:text-foreground text-[0.8rem] no-underline transition-colors data-[depth=3]:pl-4 data-[depth=4]:pl-6"
             data-active="false" data-depth="2">
-            dto/
-        </a>
-        
-
-        
-        <a href="#config"
-            class="text-muted-foreground hover:text-foreground data-[active=true]:text-foreground text-[0.8rem] no-underline transition-colors data-[depth=3]:pl-4 data-[depth=4]:pl-6"
-            data-active="false" data-depth="2">
-            config/
+            service/
         </a>
         
 

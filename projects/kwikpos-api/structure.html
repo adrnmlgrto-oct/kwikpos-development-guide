@@ -948,39 +948,50 @@
     </div>
   </div>
   <div class="typography w-full flex-1 *:data-[slot=alert]:first:mt-0">
-    <pre><code>kwikpos-api/
+    <pre><code>kwikpos-legacy-adapter/
 ├── src/
 │   ├── main/
 │   │   ├── java/
-│   │   │   └── com/kwikpos/api/
+│   │   │   └── com/oneclicktech/kwikpos_legacy_adapter
+│   │   │       ├── component/       # Component classes
+│   │   │       ├── config/          # Configuration classes
 │   │   │       ├── controller/      # REST controllers
-│   │   │       ├── service/         # Business logic
+│   │   │       ├── enums/           # Enum objects
 │   │   │       ├── mapper/          # Mapper interface methods (SQL Queries)
 │   │   │       ├── model/           # Data entity models
-│   │   │       ├── dto/             # Data transfer objects
-│   │   │       └── config/          # Configuration classes
+│   │   │       ├── security/        # Security configurations
+│   │   │       ├── service/         # Business logic
+│   │   │       └── utils/           # Global utility classes
+│   │   │
 │   │   └── resources/
 │   │       ├── application.properties
 │   │       ├── application-dev.properties
 │   │       ├── application-production.properties
-│   │       └── templates/           # Templates if any
-│   └── test/                        # Unit and integration tests
+│   │       └── static/              # Static asset files (Img, CSS, JS, etc.)
+│   │
+│   └── test/                        # Unit tests
 ├── pom.xml                          # Maven configuration
 └── README.md
 </code></pre>
 <h2 id="package-overview">Package Overview</h2>
+<h3 id="component">component/</h3>
+<p>Component classes for cross-cutting concerns such as automatic BASE URL resolution for deployment environments, scheduled tasks (e.g., clearing pending sales orders after 1 hour), and other reusable utilities.</p>
+<h3 id="config">config/</h3>
+<p>Configuration classes for Spring Boot application settings, including async configuration, AWS integration, caching, CORS policies, OpenAPI documentation, task scheduling, and storage backend configurations.</p>
 <h3 id="controller">controller/</h3>
 <p>REST controllers that handle HTTP requests from kiosks. Endpoints are designed to receive order data in modern formats.</p>
-<h3 id="service">service/</h3>
-<p>Business logic layer that handles order transformation and POS communication. This is where the adapter logic resides.</p>
+<h3 id="enums">enums/</h3>
+<p>Enum objects that define fixed sets of constants used throughout the application for type-safe value representation.</p>
 <h3 id="mapper">mapper/</h3>
 <p>MyBatis mapper interfaces defining SQL queries for database operations with both the order database and POS database.</p>
 <h3 id="model">model/</h3>
 <p>Entity models representing both modern order structures and legacy POS data structures.</p>
-<h3 id="dto">dto/</h3>
-<p>Data Transfer Objects for API requests and responses, handling the translation between kiosk format and POS format.</p>
-<h3 id="config">config/</h3>
-<p>Configuration classes for Spring Boot, database connections, security, and integration settings.</p>
+<h3 id="security">security/</h3>
+<p>Security configuration classes that handle authentication, authorization, and other security-related functionality.</p>
+<h3 id="service">service/</h3>
+<p>Business logic layer that handles order transformation and POS communication. This is where the adapter logic resides.</p>
+<h3 id="utils">utils/</h3>
+<p>Global utility classes that provide helper functions and common functionality across the application, not limited to specific resources.</p>
   </div>
 </article>
                                 <div class="mx-auto flex flex-wrap h-16 w-full max-w-2xl items-center gap-2 px-4 md:px-0">
@@ -1267,6 +1278,22 @@
         
         
         
+        <a href="#component"
+            class="text-muted-foreground hover:text-foreground data-[active=true]:text-foreground text-[0.8rem] no-underline transition-colors data-[depth=3]:pl-4 data-[depth=4]:pl-6"
+            data-active="false" data-depth="2">
+            component/
+        </a>
+        
+
+        
+        <a href="#config"
+            class="text-muted-foreground hover:text-foreground data-[active=true]:text-foreground text-[0.8rem] no-underline transition-colors data-[depth=3]:pl-4 data-[depth=4]:pl-6"
+            data-active="false" data-depth="2">
+            config/
+        </a>
+        
+
+        
         <a href="#controller"
             class="text-muted-foreground hover:text-foreground data-[active=true]:text-foreground text-[0.8rem] no-underline transition-colors data-[depth=3]:pl-4 data-[depth=4]:pl-6"
             data-active="false" data-depth="2">
@@ -1275,10 +1302,10 @@
         
 
         
-        <a href="#service"
+        <a href="#enums"
             class="text-muted-foreground hover:text-foreground data-[active=true]:text-foreground text-[0.8rem] no-underline transition-colors data-[depth=3]:pl-4 data-[depth=4]:pl-6"
             data-active="false" data-depth="2">
-            service/
+            enums/
         </a>
         
 
@@ -1299,18 +1326,26 @@
         
 
         
-        <a href="#dto"
+        <a href="#security"
             class="text-muted-foreground hover:text-foreground data-[active=true]:text-foreground text-[0.8rem] no-underline transition-colors data-[depth=3]:pl-4 data-[depth=4]:pl-6"
             data-active="false" data-depth="2">
-            dto/
+            security/
         </a>
         
 
         
-        <a href="#config"
+        <a href="#service"
             class="text-muted-foreground hover:text-foreground data-[active=true]:text-foreground text-[0.8rem] no-underline transition-colors data-[depth=3]:pl-4 data-[depth=4]:pl-6"
             data-active="false" data-depth="2">
-            config/
+            service/
+        </a>
+        
+
+        
+        <a href="#utils"
+            class="text-muted-foreground hover:text-foreground data-[active=true]:text-foreground text-[0.8rem] no-underline transition-colors data-[depth=3]:pl-4 data-[depth=4]:pl-6"
+            data-active="false" data-depth="2">
+            utils/
         </a>
         
 

@@ -8,6 +8,9 @@
 4. Test locally with MySQL database
 5. Submit pull request for code review
 
+!!! warning "Warning:"
+    Do **not** commit and push the `application.properties` in source control for this project as it contains sensitive keys and etc. unlike the KwikPOS API project which uses profile-specific properties files.
+
 ## Database Changes
 
 1. Create migration SQL DDL scripts

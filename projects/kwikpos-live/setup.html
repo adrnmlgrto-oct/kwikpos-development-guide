@@ -962,21 +962,33 @@
 <pre><code class="language-bash">git clone https://github.com/oct-ph/kwikpos-live-legacy-backend.git
 cd kwikpos-live-legacy-backend
 </code></pre>
-<h3 id="2-request-for-the-dumped-data-for-local-testing-then-import-via-mysql-workbench-80">2. Request for the Dumped Data for Local Testing then Import via MySQL Workbench 8.0</h3>
-<h3 id="3-update-configuration">3. Update Configuration</h3>
+<h3 id="2-request-for-the-application-properties-file">2. Request for the Application Properties File</h3>
+<p>The project utilizes an <code>application.properties</code> file which holds all of the necessary project configurations. The spring boot application will not run without this.</p>
+<p>We additionally excluded this from source control as it doesn't use profiles unlike the project for KwikPOS API.</p>
+<h3 id="3-request-for-the-dumped-data-for-local-testing-then-import-via-mysql-workbench-80">3. Request for the Dumped Data for Local Testing then Import via MySQL Workbench 8.0</h3>
+<p>This step would be crucial in order to setup your own database to use for local development and testing.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning:</p>
+<p>Avoid testing in production environment.</p>
+</div>
+<h3 id="4-update-configuration">4. Update Configuration</h3>
 <p>Edit the <code>application.properties</code> file and configure database connection:</p>
 <pre><code class="language-properties">spring.datasource.url=jdbc:mysql://localhost:3306/kwikpos_live_legacy
 spring.datasource.username=your_username
 spring.datasource.password=your_password
 </code></pre>
-<h3 id="4-build-the-project">4. Build the Project</h3>
+<div class="admonition warning">
+<p class="admonition-title">Warning:</p>
+<p>Do <strong>not</strong> commit and push the <code>application.properties</code> in source control for this project as it contains sensitive keys and etc. unlike the KwikPOS API project which uses profile-specific properties files.</p>
+</div>
+<h3 id="5-build-the-project">5. Build the Project</h3>
 <pre><code class="language-bash">mvn clean install
 </code></pre>
-<h3 id="5-run-locally">5. Run Locally</h3>
+<h3 id="6-run-locally">6. Run Locally</h3>
 <pre><code class="language-bash"># Using Spring Boot
 mvn spring-boot:run
 </code></pre>
-<h3 id="6-verify-installation">6. Verify Installation</h3>
+<h3 id="7-verify-installation">7. Verify Installation</h3>
 <ul>
 <li>Access via<ul>
 <li>http://localhost:8082</li>
@@ -1298,34 +1310,40 @@ mvn spring-boot:run
             1. Clone the Repository
         </a>
         
-        <a href="#2-request-for-the-dumped-data-for-local-testing-then-import-via-mysql-workbench-80"
+        <a href="#2-request-for-the-application-properties-file"
             class="text-muted-foreground hover:text-foreground data-[active=true]:text-foreground text-[0.8rem] no-underline transition-colors data-[depth=3]:pl-4 data-[depth=4]:pl-6"
             data-active="false" data-depth="3">
-            2. Request for the Dumped Data for Local Testing then Import via MySQL Workbench 8.0
+            2. Request for the Application Properties File
         </a>
         
-        <a href="#3-update-configuration"
+        <a href="#3-request-for-the-dumped-data-for-local-testing-then-import-via-mysql-workbench-80"
             class="text-muted-foreground hover:text-foreground data-[active=true]:text-foreground text-[0.8rem] no-underline transition-colors data-[depth=3]:pl-4 data-[depth=4]:pl-6"
             data-active="false" data-depth="3">
-            3. Update Configuration
+            3. Request for the Dumped Data for Local Testing then Import via MySQL Workbench 8.0
         </a>
         
-        <a href="#4-build-the-project"
+        <a href="#4-update-configuration"
             class="text-muted-foreground hover:text-foreground data-[active=true]:text-foreground text-[0.8rem] no-underline transition-colors data-[depth=3]:pl-4 data-[depth=4]:pl-6"
             data-active="false" data-depth="3">
-            4. Build the Project
+            4. Update Configuration
         </a>
         
-        <a href="#5-run-locally"
+        <a href="#5-build-the-project"
             class="text-muted-foreground hover:text-foreground data-[active=true]:text-foreground text-[0.8rem] no-underline transition-colors data-[depth=3]:pl-4 data-[depth=4]:pl-6"
             data-active="false" data-depth="3">
-            5. Run Locally
+            5. Build the Project
         </a>
         
-        <a href="#6-verify-installation"
+        <a href="#6-run-locally"
             class="text-muted-foreground hover:text-foreground data-[active=true]:text-foreground text-[0.8rem] no-underline transition-colors data-[depth=3]:pl-4 data-[depth=4]:pl-6"
             data-active="false" data-depth="3">
-            6. Verify Installation
+            6. Run Locally
+        </a>
+        
+        <a href="#7-verify-installation"
+            class="text-muted-foreground hover:text-foreground data-[active=true]:text-foreground text-[0.8rem] no-underline transition-colors data-[depth=3]:pl-4 data-[depth=4]:pl-6"
+            data-active="false" data-depth="3">
+            7. Verify Installation
         </a>
         
         

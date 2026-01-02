@@ -32,6 +32,12 @@ mybatis.configuration-properties.posdb-schema=posdb
 app.storage.local.base-path=D:/KwikPOS API/media/files
 ```
 
+!!! note "Note:"
+    You can find and download these profile-specific `.properties` files [here](https://drive.google.com/drive/folders/1zMB9Ne_dTvHlyBE509Kp_1vpUQpxiIwT?usp=drive_link).
+
+!!! warning "Warning:"
+    Do **not** commit and push the `application-dev.properties` or the `application-production.properties` in source control for this project.
+
 ### 3. Build the Project
 
 ```bash
