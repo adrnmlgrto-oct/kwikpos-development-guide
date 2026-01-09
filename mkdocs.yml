@@ -8,6 +8,7 @@ plugins:
   - excalidraw
 markdown_extensions:
   - admonition
+  - pymdownx.keys
   - pymdownx.tasklist:
       custom_checkbox: true
 nav:
@@ -43,6 +44,7 @@ nav:
       - Overview: projects/kwikpos-fullybooked/index.md
       - Responsibilities: projects/kwikpos-fullybooked/responsibilities.md
       - WebExt Installation: projects/kwikpos-fullybooked/webext-installation.md
+      - Tomcat Logs Cleaner Setup: projects/kwikpos-fullybooked/tomcat-logs-cleanup.md
       - Deployment: projects/kwikpos-fullybooked/deployment.md
       - Development Tasks: projects/kwikpos-fullybooked/development.md
       - Tender Requirements Map: projects/kwikpos-fullybooked/tender-requirements.md
