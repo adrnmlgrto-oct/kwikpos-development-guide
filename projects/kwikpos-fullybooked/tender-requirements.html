@@ -999,14 +999,14 @@
     </div>
   </div>
   <div class="typography w-full flex-1 *:data-[slot=alert]:first:mt-0">
-    <p>This document provides a comprehensive reference of all tender types used in the FullyBooked integration and their associated requirement field IDs. Each tender type has specific fields that must be captured during the transaction process.</p>
+    <div><p>This document provides a comprehensive reference of all tender types used in the FullyBooked integration and their associated requirement field IDs. Each tender type has specific fields that must be captured during the transaction process.</p>
 <h2 id="overview">Overview</h2>
 <p>Tender requirements define the additional information that needs to be collected for each payment method. The requirement IDs map to specific fields in the <code>tblSaleTenderRequirement</code> table and are used in the export views for FullyBooked.</p>
 <div class="admonition info">
 <p class="admonition-title">Common Requirement ID:</p>
 <p>Requirement ID <code>0</code> (Tendered Amount/Amount) is used across all tender types to capture the payment amount.</p>
 </div>
-<hr />
+<hr>
 <h2 id="cash-tender">Cash Tender</h2>
 <p><strong>Tender ID:</strong> <code>1</code></p>
 <div class="table-wrapper"><table>
@@ -1039,7 +1039,7 @@
 </tr>
 </tbody>
 </table></div>
-<hr />
+<hr>
 <h2 id="credit-card">Credit Card</h2>
 <p><strong>Tender ID:</strong> <code>2</code></p>
 <div class="table-wrapper"><table>
@@ -1112,7 +1112,7 @@
 </tr>
 </tbody>
 </table></div>
-<hr />
+<hr>
 <h2 id="check">Check</h2>
 <p><strong>Tender ID:</strong> <code>3</code></p>
 <div class="table-wrapper"><table>
@@ -1157,7 +1157,7 @@
 </tr>
 </tbody>
 </table></div>
-<hr />
+<hr>
 <h2 id="exchange">Exchange</h2>
 <p><strong>Tender ID:</strong> <code>5</code></p>
 <div class="table-wrapper"><table>
@@ -1178,7 +1178,7 @@
 </tr>
 </tbody>
 </table></div>
-<hr />
+<hr>
 <h2 id="gift-cheque">Gift Cheque</h2>
 <p><strong>Tender ID:</strong> <code>6</code></p>
 <div class="table-wrapper"><table>
@@ -1203,7 +1203,7 @@
 </tr>
 </tbody>
 </table></div>
-<hr />
+<hr>
 <h2 id="gcash">GCash</h2>
 <p><strong>Tender ID:</strong> <code>8</code></p>
 <div class="table-wrapper"><table>
@@ -1256,7 +1256,7 @@
 </tr>
 </tbody>
 </table></div>
-<hr />
+<hr>
 <h2 id="others">Others</h2>
 <p><strong>Tender ID:</strong> <code>10</code></p>
 <div class="table-wrapper"><table>
@@ -1293,7 +1293,7 @@
 </tr>
 </tbody>
 </table></div>
-<hr />
+<hr>
 <h2 id="fbegc-fullybooked-e-gift-certificate">FBEGC (FullyBooked E-Gift Certificate)</h2>
 <p><strong>Tender ID:</strong> <code>12</code></p>
 <div class="table-wrapper"><table>
@@ -1334,7 +1334,7 @@
 </tr>
 </tbody>
 </table></div>
-<hr />
+<hr>
 <h2 id="dragonpay">DragonPay</h2>
 <p><strong>Tender ID:</strong> <code>13</code></p>
 <div class="table-wrapper"><table>
@@ -1371,7 +1371,7 @@
 </tr>
 </tbody>
 </table></div>
-<hr />
+<hr>
 <h2 id="cwt-creditable-withholding-tax">CWT (Creditable Withholding Tax)</h2>
 <p><strong>Tender ID:</strong> <code>15</code></p>
 <div class="table-wrapper"><table>
@@ -1404,7 +1404,7 @@
 </tr>
 </tbody>
 </table></div>
-<hr />
+<hr>
 <h2 id="gifted">Gifted</h2>
 <p><strong>Tender ID:</strong> <code>16</code></p>
 <div class="table-wrapper"><table>
@@ -1441,7 +1441,7 @@
 </tr>
 </tbody>
 </table></div>
-<hr />
+<hr>
 <h2 id="lazada">Lazada</h2>
 <p><strong>Tender ID:</strong> <code>21</code></p>
 <div class="table-wrapper"><table>
@@ -1466,7 +1466,7 @@
 </tr>
 </tbody>
 </table></div>
-<hr />
+<hr>
 <h2 id="giftway">Giftway</h2>
 <p><strong>Tender ID:</strong> <code>22</code></p>
 <div class="table-wrapper"><table>
@@ -1503,7 +1503,7 @@
 </tr>
 </tbody>
 </table></div>
-<hr />
+<hr>
 <h2 id="shopee">Shopee</h2>
 <p><strong>Tender ID:</strong> <code>23</code></p>
 <div class="table-wrapper"><table>
@@ -1532,7 +1532,7 @@
 </tr>
 </tbody>
 </table></div>
-<hr />
+<hr>
 <h2 id="cod-cash-on-delivery">COD (Cash on Delivery)</h2>
 <p><strong>Tender ID:</strong> <code>31</code></p>
 <div class="table-wrapper"><table>
@@ -1569,7 +1569,7 @@
 </tr>
 </tbody>
 </table></div>
-<hr />
+<hr>
 <h2 id="wechat">WeChat</h2>
 <p><strong>Tender ID:</strong> <code>32</code></p>
 <div class="table-wrapper"><table>
@@ -1606,7 +1606,7 @@
 </tr>
 </tbody>
 </table></div>
-<hr />
+<hr>
 <h2 id="alipay">Alipay</h2>
 <p><strong>Tender ID:</strong> <code>33</code></p>
 <div class="table-wrapper"><table>
@@ -1643,7 +1643,7 @@
 </tr>
 </tbody>
 </table></div>
-<hr />
+<hr>
 <h2 id="grabmart">GrabMart</h2>
 <p><strong>Tender ID:</strong> <code>34</code></p>
 <div class="table-wrapper"><table>
@@ -1680,7 +1680,7 @@
 </tr>
 </tbody>
 </table></div>
-<hr />
+<hr>
 <h2 id="bank-transfer">Bank Transfer</h2>
 <p><strong>Tender ID:</strong> <code>36</code></p>
 <div class="admonition warning">
@@ -1725,7 +1725,7 @@
 </tr>
 </tbody>
 </table></div>
-<hr />
+<hr>
 <h2 id="glife">GLife</h2>
 <p><strong>Tender ID:</strong> <code>39</code></p>
 <div class="table-wrapper"><table>
@@ -1766,7 +1766,7 @@
 </tr>
 </tbody>
 </table></div>
-<hr />
+<hr>
 <h2 id="shopeepay">ShopeePay</h2>
 <p><strong>Tender ID:</strong> <code>40</code></p>
 <div class="table-wrapper"><table>
@@ -1803,7 +1803,7 @@
 </tr>
 </tbody>
 </table></div>
-<hr />
+<hr>
 <h2 id="store-credit">Store Credit</h2>
 <p><strong>Tender ID:</strong> <code>43</code></p>
 <div class="table-wrapper"><table>
@@ -1844,7 +1844,7 @@
 </tr>
 </tbody>
 </table></div>
-<hr />
+<hr>
 <h2 id="virtual-gc-gift-certificate">Virtual GC (Gift Certificate)</h2>
 <p><strong>Tender ID:</strong> <code>44</code></p>
 <div class="table-wrapper"><table>
@@ -1885,7 +1885,7 @@
 </tr>
 </tbody>
 </table></div>
-<hr />
+<hr>
 <h2 id="cashback">Cashback</h2>
 <p><strong>Tender ID:</strong> <code>45</code></p>
 <div class="table-wrapper"><table>
@@ -1926,7 +1926,7 @@
 </tr>
 </tbody>
 </table></div>
-<hr />
+<hr>
 <h2 id="digital-wallet">Digital Wallet</h2>
 <p><strong>Tender ID:</strong> <code>46</code></p>
 <div class="table-wrapper"><table>
@@ -1967,7 +1967,7 @@
 </tr>
 </tbody>
 </table></div>
-<hr />
+<hr>
 <h2 id="bdo-debit">BDO - Debit</h2>
 <p><strong>Tender ID:</strong> <code>47</code></p>
 <div class="table-wrapper"><table>
@@ -2000,7 +2000,7 @@
 </tr>
 </tbody>
 </table></div>
-<hr />
+<hr>
 <h2 id="metrobank-debit">Metrobank - Debit</h2>
 <p><strong>Tender ID:</strong> <code>48</code></p>
 <div class="table-wrapper"><table>
@@ -2033,7 +2033,7 @@
 </tr>
 </tbody>
 </table></div>
-<hr />
+<hr>
 <h2 id="bdo-e-wallet">BDO E-Wallet</h2>
 <p><strong>Tender ID:</strong> <code>49</code></p>
 <div class="table-wrapper"><table>
@@ -2066,7 +2066,7 @@
 </tr>
 </tbody>
 </table></div>
-<hr />
+<hr>
 <h2 id="metrobank-e-wallet">Metrobank E-Wallet</h2>
 <p><strong>Tender ID:</strong> <code>50</code></p>
 <div class="table-wrapper"><table>
@@ -2099,7 +2099,7 @@
 </tr>
 </tbody>
 </table></div>
-<hr />
+<hr>
 <h2 id="tiktok">TikTok</h2>
 <p><strong>Tender ID:</strong> <code>62</code></p>
 <div class="admonition danger">
@@ -2132,7 +2132,7 @@
 </tr>
 </tbody>
 </table></div>
-<hr />
+<hr>
 <h2 id="usage-notes">Usage Notes</h2>
 <h3 id="working-with-tender-requirements">Working with Tender Requirements</h3>
 <p>When modifying tender requirement mappings:</p>
@@ -2157,7 +2157,7 @@
 <li>Add the new tender type to this documentation</li>
 <li>Update the <code>dbo.View_tblSaleTenderRequirement</code> view to include the new mappings</li>
 <li>Test the export with sample transactions using the new tender type</li>
-</ol>
+</ol></div>
   </div>
 </article>
                                 <div class="mx-auto flex flex-wrap h-16 w-full max-w-2xl items-center gap-2 px-4 md:px-0">

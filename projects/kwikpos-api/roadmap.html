@@ -999,10 +999,10 @@
     </div>
   </div>
   <div class="typography w-full flex-1 *:data-[slot=alert]:first:mt-0">
-    <p>This document outlines planned features, integrations, and improvements for KwikPOS API. These items represent future work that needs to be implemented.</p>
+    <div><p>This document outlines planned features, integrations, and improvements for KwikPOS API. These items represent future work that needs to be implemented.</p>
 <h2 id="planned-features">Planned Features</h2>
 <h3 id="kwikpos-terminal-fine-dine-handheld-device-support">KwikPOS Terminal (Fine-Dine Handheld Device) Support</h3>
-<p><strong>Priority:</strong> High<br />
+<p><strong>Priority:</strong> High<br>
 <strong>Status:</strong> Planned</p>
 <p><strong>Description:</strong>
 Modify or extend this project to support KwikPOS Terminal, a handheld ordering device for waiters in fine-dining restaurant setups. While technically still functioning as a kiosk-like ordering device, it's designed for waiter-assisted table ordering rather than self-service.</p>
@@ -1059,14 +1059,14 @@ Modify or extend this project to support KwikPOS Terminal, a handheld ordering d
 <li>Consider whether this should be a separate project or extension of current API</li>
 <li>May need to handle different network configurations (Wi-Fi for mobile devices)</li>
 </ul>
-<hr />
+<hr>
 <h2 id="pos-system-compatibility">POS System Compatibility</h2>
 <h3 id="integration-with-other-pos-providers">Integration with Other POS Providers</h3>
-<p><strong>Priority:</strong> Medium<br />
+<p><strong>Priority:</strong> Medium<br>
 <strong>Status:</strong> Planned</p>
 <p><strong>Description:</strong>
 Support integration with POS systems beyond Chase POS to enable selling KwikPOS kiosk products to clients who want to use their existing POS provider without switching systems. This expands the market reach for standalone kiosk sales.</p>
-<p><strong>Current Support:</strong> Chase POS only<br />
+<p><strong>Current Support:</strong> Chase POS only<br>
 <strong>Planned Support:</strong> Multiple POS providers (TBD based on sales requirements)</p>
 <p><strong>Business Context:</strong></p>
 <ul>
@@ -1117,10 +1117,10 @@ Support integration with POS systems beyond Chase POS to enable selling KwikPOS 
 <li>Priority and specific POS providers will be determined based on client demands</li>
 <li>Consider creating a priority list of POS systems based on market research</li>
 </ul>
-<hr />
+<hr>
 <h2 id="data-transformation-enhancements">Data Transformation Enhancements</h2>
 <h3 id="calorie-count-kcal-inclusion-in-items-endpoint-response">Calorie Count (kcal) Inclusion in Items Endpoint Response</h3>
-<p><strong>Priority:</strong> High<br />
+<p><strong>Priority:</strong> High<br>
 <strong>Status:</strong> In Progress</p>
 <p><strong>Description:</strong>
 Add calorie count information to the items endpoint response to comply with Quezon City Local Government Unit (LGU) Ordinance No. <em>SP-3254 S-2024</em>, which requires food establishments to display calorie information on all menus including electronic/digital menus such as kiosks.</p>
@@ -1150,9 +1150,9 @@ Items endpoint returns menu items without calorie information. The POS database 
 </ul>
 <p><strong>Current Progress:</strong></p>
 <ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Initial investigation started - identifying calorie column in POS database</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Column mapping and SQL query updates already done</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Still needs: Testing, validation, and deployment</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Initial investigation started - identifying calorie column in POS database</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Column mapping and SQL query updates already done</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled><span class="task-list-indicator"></span></label> Still needs: Testing, validation, and deployment</li>
 </ul>
 <p><strong>Implementation Details:</strong></p>
 <ul>
@@ -1206,7 +1206,7 @@ Items endpoint returns menu items without calorie information. The POS database 
 <li>Coordinate with frontend team for kiosk UI updates</li>
 <li>Plan deployment timeline to meet Phase 1 deadline (Dec 20, 2025)</li>
 </ol>
-<hr />
+<hr>
 <h2 id="notes-for-future-developers">Notes for Future Developers</h2>
 <h3 id="general-context">General Context</h3>
 <p>This project was personally started by myself, and its currently what I would call a "good" and flexible project that can adapt to requirement changes.</p>
@@ -1225,7 +1225,7 @@ Items endpoint returns menu items without calorie information. The POS database 
 <li><strong>Always</strong> confirm the modifications whether if it would be possible for us to do, or the change would be on the POS side.</li>
 <li><strong>Always</strong> update the team lead or the project manager if the modifications requested after deployment needs to be billed or charged before implementing.</li>
 </ul>
-<hr />
+<hr>
 <h2 id="timeline-prioritization">Timeline &amp; Prioritization</h2>
 <h3 id="q4-2025-q1-2026-immediate-priority">Q4 2025 / Q1 2026 (Immediate Priority)</h3>
 <ul>
@@ -1262,7 +1262,7 @@ Items endpoint returns menu items without calorie information. The POS database 
 <li>Bug fixes and technical improvements as identified</li>
 <li>Performance optimizations</li>
 <li>Security updates and patches</li>
-</ul>
+</ul></div>
   </div>
 </article>
                                 <div class="mx-auto flex flex-wrap h-16 w-full max-w-2xl items-center gap-2 px-4 md:px-0">

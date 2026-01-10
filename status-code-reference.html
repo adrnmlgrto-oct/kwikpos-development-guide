@@ -999,7 +999,7 @@
     </div>
   </div>
   <div class="typography w-full flex-1 *:data-[slot=alert]:first:mt-0">
-    <p>This page documents the status codes used in sales records across different POS systems in the KwikPOS ecosystem.</p>
+    <div><p>This page documents the status codes used in sales records across different POS systems in the KwikPOS ecosystem.</p>
 <h2 id="overview">Overview</h2>
 <p>Status codes are used to identify the type of transaction or operation recorded in the sales database. Different POS systems use different status code mappings, which is important to understand when working with sales data, reports, or integrations.</p>
 <h2 id="legacy-pos-chase">Legacy POS (Chase)</h2>
@@ -1119,7 +1119,7 @@ WHERE [status] IN (1, 5);  -- Regular transactions including those with print is
 <p><strong>Filtering Regular Transactions (KwikPOS Pro):</strong></p>
 <pre><code class="language-sql">-- Include only regular sales transactions
 SELECT * FROM sales_m2
-WHERE &quot;status&quot; = 1;  -- Regular transactions only
+WHERE "status" = 1;  -- Regular transactions only
 </code></pre>
 <p><strong>Excluding Non-Sales Operations (Chase POS):</strong></p>
 <pre><code class="language-sql">-- Exclude reporting and cash management operations
@@ -1139,8 +1139,8 @@ WHERE [status] NOT IN (6, 7, 8, 9, 10, 11, 501, 502);
 <li><a href="projects/kwikpos-api/index.html">KwikPOS API Overview</a> - Kiosk adapter documentation</li>
 <li><a href="projects/kwikpos-fullybooked/index.html">FullyBooked (WebExt)</a> - Integration of KwikPOS &amp; FullyBooked documentation</li>
 </ul>
-<hr />
-<p><strong>Note:</strong> This reference is maintained based on production systems as of the last update date. If you notice discrepancies or new status codes, please update this documentation and notify the development team.</p>
+<hr>
+<p><strong>Note:</strong> This reference is maintained based on production systems as of the last update date. If you notice discrepancies or new status codes, please update this documentation and notify the development team.</p></div>
   </div>
 </article>
                                 <div class="mx-auto flex flex-wrap h-16 w-full max-w-2xl items-center gap-2 px-4 md:px-0">

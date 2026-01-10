@@ -2,7 +2,7 @@
 
 This guide explains how to set up an automated cleanup script for Tomcat logs and temporary files on POS machines to prevent storage issues.
 
-<iframe src="https://drive.google.com/file/d/1BuWln4tSEKyafV2eQa3VAJjw_w98Yx7L/preview" width="640" height="480" allow="autoplay; fullscreen" frameborder="0"></iframe>
+![type:video](https://www.youtube.com/embed/zqRf_Zlkd7k)
 
 ---
 
