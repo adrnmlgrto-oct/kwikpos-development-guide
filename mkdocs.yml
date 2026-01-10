@@ -6,6 +6,7 @@ theme: shadcn
 plugins:
   - search
   - excalidraw
+  - mkdocs-video
 markdown_extensions:
   - admonition
   - pymdownx.keys
