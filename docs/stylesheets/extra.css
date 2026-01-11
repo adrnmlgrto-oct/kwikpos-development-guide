@@ -1,0 +1,78 @@
+/* Custom spacing fixes for mkdocs-shadcn typography */
+
+/* H2 headings: large space BEFORE (from previous section), small space AFTER (to own content) */
+.typography h2 {
+  margin-top: 4rem !important;
+  margin-bottom: 0.75rem !important;
+}
+
+/* First h2 in the document should have less top margin */
+.typography > div > h2:first-child,
+.typography h2:first-of-type {
+  margin-top: 1.5rem !important;
+}
+
+/* If there's a paragraph before the first h2, give it normal spacing */
+.typography > div > p + h2:first-of-type {
+  margin-top: 4rem !important;
+}
+
+/* H3 headings: moderate space BEFORE, small space AFTER */
+.typography h3 {
+  margin-top: 2rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+/* Add spacing for horizontal rules */
+.typography hr {
+  margin-top: 2.5rem !important;
+  margin-bottom: 1rem !important;
+}
+
+/* Add spacing for admonition blocks */
+.typography .admonition {
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+}
+
+/* Add spacing after lists */
+.typography ul,
+.typography ol {
+  margin-bottom: 1rem !important;
+}
+
+/* Add spacing for code blocks */
+.typography pre {
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+}
+
+/* Add spacing after paragraphs */
+.typography p {
+  margin-bottom: 0.75rem !important;
+}
+
+/* Add spacing for video containers */
+.typography .video-container {
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+}
+
+/* KEY FIX: Ensure large spacing BEFORE H2 when it follows content from previous section */
+.typography .admonition + h2,
+.typography ul + h2,
+.typography ol + h2,
+.typography pre + h2,
+.typography p + h2,
+.typography .video-container + h2 {
+  margin-top: 4rem !important;
+}
+
+/* Moderate spacing before H3 */
+.typography .admonition + h3,
+.typography ul + h3,
+.typography ol + h3,
+.typography pre + h3,
+.typography p + h3 {
+  margin-top: 2.5rem !important;
+}

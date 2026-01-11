@@ -2,6 +2,7 @@
 
 Welcome to the **KwikPOS Developer Guide**! This documentation is designed to help developers onboard quickly and become productive members of the KwikPOS development team.
 
+
 ## What is KwikPOS?
 
 KwikPOS is a modern, offline-first Point of Sale (POS) system built to streamline food and retail operations with features including inventory management, sales tracking, and advanced analytics.

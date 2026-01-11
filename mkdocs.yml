@@ -12,6 +12,8 @@ markdown_extensions:
   - pymdownx.keys
   - pymdownx.tasklist:
       custom_checkbox: true
+extra_css:
+  - stylesheets/extra.css
 nav:
   - Introduction: index.md
   - Prerequisites: prerequisites.md
